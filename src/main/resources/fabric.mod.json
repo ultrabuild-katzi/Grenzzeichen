@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "grenzzeichen",
+  "version": "${version}",
+  "name": "Grenzzeichen",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/grenzzeichen/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.raphicraft.grenzzeichen.client.GrenzzeichenClient"
+    ],
+    "main": [
+      "de.raphicraft.grenzzeichen.Grenzzeichen"
+    ]
+  },
+  "mixins": [
+    "grenzzeichen.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
