@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#W ",
+        "WGW",
+        "HKH"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:pantograph"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        },
+        "G": {
+            "item": "grenzzeichen:interior"
+        },
+        "H": {
+            "item": "grenzzeichen:achse"
+        },
+        "K": {
+            "item": "grenzzeichen:grundplatte"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:ice1bistro",
+        "count": 1
+    }
+}

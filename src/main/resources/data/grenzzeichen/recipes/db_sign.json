@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:decalplate"
+        },
+        "G": {
+            "item": "grenzzeichen:decal_db"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:db_sign",
+        "count": 1
+    }
+}

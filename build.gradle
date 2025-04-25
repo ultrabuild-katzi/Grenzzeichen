@@ -12,21 +12,39 @@ base {
 
 
 repositories {
+    maven { url = "https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1" }
+    maven { name = "Devos Maven"; description = "Create Fabric, Porting Lib, Forge Tags, Milk Lib & Fabric Registrate"; url = "https://mvn.devos.one/snapshots/" }
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroupByRegex("software\\.bernie.*")
+            includeGroup("com.eliotlash.mclib")
+        }
+    }
     // Add repositories to retrieve artifacts from in here.
     // You should only use this when depending on other mods because
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
+    maven { name = "Curseforge Maven"; description = "Forge Config API Port"; url = "https://cursemaven.com/" }
+    maven { name = "Tterrag Maven"; description = "Create, Forge Registrate & Forge Flywheel"; url = "https://maven.tterrag.com/" }
+    maven { name = "JamiesWhiteShirt Maven"; description = "Reach Entity Attributes"; url = "https://maven.jamieswhiteshirt.com/libs-release" }
+    maven { name = "Jitpack maven"; description = "Mixin Extras & Fabric ASM"; url = "https://jitpack.io/" } //NOTE: LEAVE THIS AS LAST
 }
 
 dependencies {
-    // To change the versions see the gradle.properties file
+    // To change the versions see the gradle.properties fileF
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}"
+    modImplementation("com.simibubi.create:create-fabric-${rootProject.minecraft_version}:${rootProject.create_fabric_version}+mc${rootProject.minecraft_version}")
+    implementation("com.eliotlash.mclib:mclib:20")
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modRuntimeOnly("me.djtheredstoner:DevAuth-fabric:1.2.1")
 }
 
 processResources {
@@ -86,5 +104,22 @@ publishing {
         // Notice: This block does NOT have the same function as the block in the top level.
         // The repositories here will be used for publishing your artifact, not for
         // retrieving dependencies.
+
+
+    }
+}
+loom {
+    runs {
+        register("datagen") {
+            client()
+
+            name = "Minecraft Data"
+            vmArg("-Dfabric-api.datagen")
+            vmArg("-Dfabric-api.datagen.output-dir=${project.file("src/generated/resources")}")
+            vmArg("-Dfabric-api.datagen.modid=railways")
+            vmArg("-Dporting_lib.datagen.existing_resources=${project.file("src/main/resources")}")
+
+            environmentVariable("DATAGEN", "TRUE")
+        }
     }
 }

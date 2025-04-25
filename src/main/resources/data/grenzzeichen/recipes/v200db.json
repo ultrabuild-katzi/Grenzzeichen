@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "HMQ",
+        "BNB"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:dmotor"
+        },
+        "G": {
+            "item": "grenzzeichen:empfaenger"
+        },
+        "H": {
+            "item": "grenzzeichen:ritzel"
+        },
+        "M": {
+            "item": "grenzzeichen:grundplatte"
+        },
+        "Q": {
+            "item": "grenzzeichen:microcontroler"
+        },
+        "B": {
+            "item": "grenzzeichen:drehgestell"
+        },
+        "N": {
+            "item": "grenzzeichen:dieseltank"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:v200db",
+        "count": 2
+    }
+}

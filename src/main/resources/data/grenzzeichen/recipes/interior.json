@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "OOO"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:oak_stairs"
+        },
+        "O": {
+            "item": "minecraft:oak_planks"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:interior",
+        "count": 1
+    }
+}

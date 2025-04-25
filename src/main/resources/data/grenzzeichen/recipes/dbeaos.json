@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "c c",
+        "cGc",
+        "Z Z"
+    ],
+    "key": {
+        "c": {
+            "item": "minecraft:copper_ingot"
+        },
+        "G": {
+            "item": "grenzzeichen:grundplatte"
+        },
+        "Z": {
+            "item": "grenzzeichen:achse"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:dbeaos",
+        "count": 2
+    }
+}

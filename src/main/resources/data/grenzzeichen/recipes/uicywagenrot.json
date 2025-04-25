@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#G#",
+        "POP"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:red_dye"
+        },
+        "G": {
+            "item": "grenzzeichen:interior"
+        },
+        "P": {
+            "item": "grenzzeichen:achse"
+        },
+        "O": {
+            "item": "grenzzeichen:grundplatte"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:uicywagenrot",
+        "count": 2
+    }
+}

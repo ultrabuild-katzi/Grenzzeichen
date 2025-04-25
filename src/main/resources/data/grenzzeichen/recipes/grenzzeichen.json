@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " G ",
+        " S "
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:redstone"
+        },
+        "G": {
+            "item": "grenzzeichen:whitestone"
+        },
+        "S": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:grenzzeichen",
+        "count": 1
+    }
+}

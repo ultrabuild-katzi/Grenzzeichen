@@ -41,5 +41,35 @@
       <option name="name" value="LoomLocalRemappedMods" />
       <option name="url" value="file:/$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="GeckoLib" />
+      <option name="name" value="GeckoLib" />
+      <option name="url" value="https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="JamiesWhiteShirt Maven" />
+      <option name="name" value="JamiesWhiteShirt Maven" />
+      <option name="url" value="https://maven.jamieswhiteshirt.com/libs-release" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Devos Maven" />
+      <option name="name" value="Devos Maven" />
+      <option name="url" value="https://mvn.devos.one/snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Tterrag Maven" />
+      <option name="name" value="Tterrag Maven" />
+      <option name="url" value="https://maven.tterrag.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Jitpack maven" />
+      <option name="name" value="Jitpack maven" />
+      <option name="url" value="https://jitpack.io/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Curseforge Maven" />
+      <option name="name" value="Curseforge Maven" />
+      <option name="url" value="https://cursemaven.com/" />
+    </remote-repository>
   </component>
 </project>

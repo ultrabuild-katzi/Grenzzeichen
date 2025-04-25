@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "S#S"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:grayiron"
+        },
+        "G": {
+            "item": "grenzzeichen:emotor"
+        },
+        "S": {
+            "item": "grenzzeichen:achse"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:drehgestell",
+        "count": 1
+    }
+}

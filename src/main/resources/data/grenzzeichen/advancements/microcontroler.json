@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "grenzzeichen:microcontroler"
+    },
+    "title": "Micro? Why not Nano?",
+    "description": "Craft a Microcontroler for 5Zoll Trains or Signals",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "grenzzeichen:grenzzeichen",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "grenzzeichen:microcontroler"
+      }
+    }
+  },
+  "requirements": [],
+  "rewards": {
+    "loot": [],
+    "recipes": [],
+    "experience": 10
+  }
+}

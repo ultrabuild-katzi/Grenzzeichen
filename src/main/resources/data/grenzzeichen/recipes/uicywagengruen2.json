@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "YGY",
+        "SUS"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:green_dye"
+        },
+        "Y": {
+            "item": "minecraft:yellow_dye"
+        },
+        "G": {
+            "item": "grenzzeichen:interior"
+        },
+        "S": {
+            "item": "grenzzeichen:achse"
+        },
+        "U": {
+            "item": "grenzzeichen:grundplatte"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:uicywagengruen2",
+        "count": 2
+    }
+}

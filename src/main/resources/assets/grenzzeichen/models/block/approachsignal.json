@@ -1,0 +1,10 @@
+{
+  "parent": "grenzzeichen:custom/hv.vs",
+  "textures": {
+    "all": "grenzzeichen:block/hv.vs.halt",
+    "particle": "grenzzeichen:block/hv.vs.halt",
+    "0": "grenzzeichen:block/girder",
+    "1": "grenzzeichen:block/hv.vs.halt"
+  },
+  "render_type": "solid"
+}

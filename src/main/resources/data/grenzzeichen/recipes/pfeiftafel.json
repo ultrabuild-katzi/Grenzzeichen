@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G",
+        "Z "
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:decalplate"
+        },
+        "G": {
+            "item": "grenzzeichen:decal_p"
+        },
+        "Z": {
+            "item": "grenzzeichen:grayiron"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:pfeiftafel",
+        "count": 1
+    }
+}

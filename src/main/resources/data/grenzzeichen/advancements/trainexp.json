@@ -1,0 +1,83 @@
+{
+  "display": {
+    "icon": {
+      "item": "grenzzeichen:weichensignal"
+    },
+    "title": "Train expert",
+    "description": "Craft every Railway Decoitem of the Grenzzeichen-Mod!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "grenzzeichen:grenzzeichen",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:grenzzeichen"
+            ]
+          }
+        ]
+      }
+    },
+    "2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:weichensignal"
+            ]
+          }
+        ]
+      }
+    },
+    "3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:pfeiftafel"
+            ]
+          }
+        ]
+      }
+    },
+    "4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:doppeltepfeiftafel"
+            ]
+          }
+        ]
+      }
+    },
+    "5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:fuehrerstand"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [],
+  "rewards": {
+    "loot": [
+      "grenzzeichen:advancements/traincap"
+    ],
+    "experience": 10
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#B#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "B": {
+            "item": "minecraft:bucket"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:dieseltank",
+        "count": 4
+    }
+}

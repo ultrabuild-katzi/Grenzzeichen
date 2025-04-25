@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "grenzzeichen:block/approachsignal"
+    },
+    "facing=east": {
+      "model": "grenzzeichen:block/approachsignal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "grenzzeichen:block/approachsignal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "grenzzeichen:block/approachsignal",
+      "y": 270
+    }
+  }
+}

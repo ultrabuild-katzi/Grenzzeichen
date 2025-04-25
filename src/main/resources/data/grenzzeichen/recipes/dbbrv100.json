@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#GW",
+        "DSD",
+        "Z Z"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:microcontroler"
+        },
+        "G": {
+            "item": "grenzzeichen:dmotor"
+        },
+        "W": {
+            "item": "grenzzeichen:empfaenger"
+        },
+        "D": {
+            "item": "grenzzeichen:dieseltank"
+        },
+        "S": {
+            "item": "grenzzeichen:grundplatte"
+        },
+        "Z": {
+            "item": "grenzzeichen:drehgestell"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:v100db",
+        "count": 1
+    }
+}

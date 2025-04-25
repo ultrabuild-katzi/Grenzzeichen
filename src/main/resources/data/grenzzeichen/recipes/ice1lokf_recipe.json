@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##G",
+        "RMY",
+        "LLQ"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:white_dye"
+        },
+        "G": {
+            "item": "grenzzeichen:ledlampeweiss"
+        },
+        "R": {
+            "item": "minecraft:red_dye"
+        },
+        "M": {
+            "item": "grenzzeichen:grundplatte"
+        },
+        "Y": {
+            "item": "grenzzeichen:ledlamperot"
+        },
+        "L": {
+            "item": "grenzzeichen:grayiron"
+        },
+        "Q": {
+            "item": "grenzzeichen:drehgestell"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:ice1lokf",
+        "count": 1
+    }
+}

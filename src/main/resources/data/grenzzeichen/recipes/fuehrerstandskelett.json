@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##G",
+        "BVR",
+        "KIN"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:lever"
+        },
+        "G": {
+            "item": "grenzzeichen:ledlamperot"
+        },
+        "B": {
+            "item": "grenzzeichen:empfaenger"
+        },
+        "V": {
+            "item": "grenzzeichen:cpu"
+        },
+        "R": {
+            "item": "grenzzeichen:ledlampe"
+        },
+        "K": {
+            "item": "grenzzeichen:capacitor"
+        },
+        "I": {
+            "item": "grenzzeichen:chipplatte"
+        },
+        "N": {
+            "item": "grenzzeichen:ledlampeweiss"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:fuehrerstandskelett",
+        "count": 1
+    }
+}

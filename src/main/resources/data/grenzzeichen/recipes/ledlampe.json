@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#i#",
+        "cGc"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glass"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "c": {
+            "item": "minecraft:copper_ingot"
+        },
+        "G": {
+            "item": "grenzzeichen:grayiron"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:ledlampe",
+        "count": 1
+    }
+}

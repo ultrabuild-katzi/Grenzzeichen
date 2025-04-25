@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "c c",
+        "GGG",
+        "GTG"
+    ],
+    "key": {
+        "c": {
+            "item": "minecraft:copper_ingot"
+        },
+        "G": {
+            "item": "grenzzeichen:grayiron"
+        },
+        "T": {
+            "item": "grenzzeichen:microcontroler"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:empfaenger",
+        "count": 1
+    }
+}

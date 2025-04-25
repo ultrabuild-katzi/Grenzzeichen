@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "grenzzeichen:v100db"
+    },
+    "title": "What is 5Zoll?!?!",
+    "description": "Own your first 5Zoll Train!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "grenzzeichen:microcontroler",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:v100db",
+              "grenzzeichen:v100dbrot",
+              "grenzzeichen:v200db",
+              "grenzzeichen:dbbre94",
+              "grenzzeichen:uicywagengruen",
+              "grenzzeichen:uicywagengruen2",
+              "grenzzeichen:uicywagenrot",
+              "grenzzeichen:dbeaos"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [],
+  "rewards": {
+    "experience": 10
+  }
+}

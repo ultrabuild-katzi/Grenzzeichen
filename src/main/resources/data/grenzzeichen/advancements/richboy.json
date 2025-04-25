@@ -1,0 +1,168 @@
+{
+  "display": {
+    "icon": {
+      "item": "grenzzeichen:dbbre94"
+    },
+    "title": "Rich Boy",
+    "description": "Own every 5Zoll train that exists!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "grenzzeichen:whatis5zoll",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:v100db"
+            ]
+          }
+        ]
+      }
+    },
+    "2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:v100dbrot"
+            ]
+          }
+        ]
+      }
+    },
+    "3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:v200db"
+            ]
+          }
+        ]
+      }
+    },
+    "4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:dbbre94"
+            ]
+          }
+        ]
+      }
+    },
+    "5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:uicywagengruen"
+            ]
+          }
+        ]
+      }
+    },
+    "6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:uicywagengruen2"
+            ]
+          }
+        ]
+      }
+    },
+    "7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:uicywagenrot"
+            ]
+          }
+        ]
+      }
+    },
+    "8": {
+      "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "grenzzeichen:dbeaos"
+              ]
+            }
+          ]
+        }
+      },
+    "9": {
+      "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+           {
+            " items": [
+                "grenzzeichen:ice1lokf"
+              ]
+            }
+          ]
+        }
+      },
+    "10": {
+      "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "grenzzeichen:ice1lokb"
+              ]
+            }
+          ]
+        }
+      },
+    "11": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:ice1wagen"
+            ]
+          }
+        ]
+      }
+    },
+    "12": {
+      "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "grenzzeichen:ice1bistro"
+              ]
+            }
+          ]
+        }
+      }
+    },
+  "requirements": [],
+  "rewards": {
+    "loot": [
+      "grenzzeichen:advancements/richboyloot"
+    ],
+    "experience": 100
+
+  }
+}

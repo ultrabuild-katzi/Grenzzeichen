@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "RGR",
+        "XWX"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:white_dye"
+        },
+        "R": {
+            "item": "minecraft:red_dye"
+        },
+        "G": {
+            "item": "grenzzeichen:interior"
+        },
+        "X": {
+            "item": "grenzzeichen:achse"
+        },
+        "W": {
+            "item": "grenzzeichen:grundplatte"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:ice1wagen",
+        "count": 1
+    }
+}

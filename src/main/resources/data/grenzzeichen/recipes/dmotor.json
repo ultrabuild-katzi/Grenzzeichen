@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iGi",
+        "FXF",
+        "iFi"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "G": {
+            "item": "grenzzeichen:kolben"
+        },
+        "F": {
+            "item": "grenzzeichen:ritzel"
+        },
+        "X": {
+            "item": "grenzzeichen:dieseltank"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:dmotor",
+        "count": 1
+    }
+}

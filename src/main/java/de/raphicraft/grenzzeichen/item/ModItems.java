@@ -1,6 +1,7 @@
 package de.raphicraft.grenzzeichen.item;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
+import de.raphicraft.grenzzeichen.item.custom.TrainCapItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -9,6 +10,32 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
+    public static final Item ACHSE = registerItem("achse", new Item(new Item.Settings()));
+    public static final Item EMOTOR = registerItem("emotor", new Item(new Item.Settings()));
+    public static final Item DMOTOR = registerItem("dmotor", new Item(new Item.Settings()));
+    public static final Item DREHGESTELL = registerItem("drehgestell", new Item(new Item.Settings()));
+    public static final Item LEDLAMPE = registerItem("ledlampe", new Item(new Item.Settings()));
+    public static final Item LEDLAMPEROT = registerItem("ledlamperot", new Item(new Item.Settings()));
+    public static final Item LEDLAMPEWEISS = registerItem("ledlampeweiss", new Item(new Item.Settings()));
+    public static final Item TRAINWHEEL = registerItem("trainwheel", new Item(new Item.Settings()));
+    public static final Item GRAYIRON = registerItem("grayiron", new Item(new Item.Settings()));
+    public static final Item MICROCONTROLER = registerItem("microcontroler", new Item(new Item.Settings()));
+    public static final Item RITZEL = registerItem("ritzel", new Item(new Item.Settings()));
+    public static final Item GRUNDPLATTE = registerItem("grundplatte", new Item(new Item.Settings()));
+    public static final Item EMPFAENGER = registerItem("empfaenger", new Item(new Item.Settings()));
+    public static final Item DIESELTANK = registerItem("dieseltank", new Item(new Item.Settings()));
+    public static final Item KOLBEN = registerItem("kolben", new Item(new Item.Settings()));
+    public static final Item CPU = registerItem("cpu", new Item(new Item.Settings()));
+    public static final Item CHIPPLATTE = registerItem("chipplatte", new Item(new Item.Settings()));
+    public static final Item CAPACITOR = registerItem("capacitor", new Item(new Item.Settings()));
+    public static final Item FUEHRERSTANDSKELETT = registerItem("fuehrerstandskelett", new Item(new Item.Settings()));
+    public static final Item PANTOGRAPH = registerItem("pantograph", new Item(new Item.Settings()));
+    public static final Item INTERIOR = registerItem("interior", new Item(new Item.Settings()));
+    public static final Item DECALPLATE = registerItem("decalplate", new Item(new Item.Settings()));
+    public static final Item DECAL_P = registerItem("decal_p", new Item(new Item.Settings()));
+    public static final Item DECAL_DB = registerItem("decal_db", new Item(new Item.Settings()));
+    public static final Item TRAINCAP = registerItem("traincap", new TrainCapItem(new Item.Settings()));
+
 
 
     private static Item registerItem(String name, Item item) {

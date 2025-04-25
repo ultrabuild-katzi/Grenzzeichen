@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#g#",
+        "gig",
+        "#g#"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:grayiron"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:cpu",
+        "count": 1
+    }
+}

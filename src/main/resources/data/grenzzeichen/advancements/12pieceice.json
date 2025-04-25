@@ -1,0 +1,67 @@
+{
+  "display": {
+    "icon": {
+      "item": "grenzzeichen:ice1lokf"
+    },
+    "title": "11 Carriges? That´s not enough!",
+    "description": "Make a 11-piece ICE1 to get a 12th Carrige!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "grenzzeichen:whatis5zoll",
+  "criteria": {
+    "lokf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "slots": {
+          "occupied": 2
+        },
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:grenzzeichen"
+            ]
+          }
+        ]
+      }
+    },
+    "lokb": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "slots": {
+          "occupied": 2
+        },
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:weichensignal"
+            ]
+          }
+        ]
+      }
+    },
+    "wagen1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "slots": {
+          "occupied": 2
+        },
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:pfeiftafel",
+              "grenzzeichen:doppeltepfeiftafel"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "RIB",
+        "YQQ"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:white_dye"
+        },
+        "G": {
+            "item": "grenzzeichen:pantograph"
+        },
+        "R": {
+            "item": "minecraft:red_dye"
+        },
+        "I": {
+            "item": "grenzzeichen:empfaenger"
+        },
+        "B": {
+            "item": "grenzzeichen:microcontroler"
+        },
+        "Y": {
+            "item": "grenzzeichen:drehgestell"
+        },
+        "Q": {
+            "item": "grenzzeichen:grayiron"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:ice1lokb",
+        "count": 1
+    }
+}

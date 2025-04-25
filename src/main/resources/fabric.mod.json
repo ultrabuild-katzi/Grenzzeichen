@@ -10,6 +10,9 @@
   "icon": "assets/grenzzeichen/icon.png",
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      "de.raphicraft.grenzzeichen.datagen.GrenzzeichenDataGenerator"
+    ],
     "client": [
       "de.raphicraft.grenzzeichen.client.GrenzzeichenClient"
     ],
@@ -23,6 +26,7 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "geckolib": "*"
   }
 }

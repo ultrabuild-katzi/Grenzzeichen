@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "grenzzeichen:block/ice1lokb", "uvlock": false },
+    "facing=east":  { "model": "grenzzeichen:block/ice1lokb", "y":  90, "uvlock": false },
+    "facing=south": { "model": "grenzzeichen:block/ice1lokb", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "grenzzeichen:block/ice1lokb", "y": 270, "uvlock": false }
+
+  }
+}

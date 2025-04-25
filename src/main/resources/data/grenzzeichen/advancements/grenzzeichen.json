@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "grenzzeichen:grenzzeichen"
+    },
+    "title": "A Grenzzeichen?",
+    "description": "Craft the Grenzzeichen for the first time!",
+    "background": "grenzzeichen:textures/block/redstone.png",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "grenzzeichen:grenzzeichen"
+      }
+    }
+  },
+  "requirements": [],
+  "rewards": {
+    "experience": 10
+  }
+}

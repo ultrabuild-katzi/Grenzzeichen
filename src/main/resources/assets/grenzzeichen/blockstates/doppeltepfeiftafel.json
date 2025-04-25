@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "grenzzeichen:block/doppeltepfeiftafel", "uvlock": false },
+    "facing=east":  { "model": "grenzzeichen:block/doppeltepfeiftafel", "y":  90, "uvlock": false },
+    "facing=south": { "model": "grenzzeichen:block/doppeltepfeiftafel", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "grenzzeichen:block/doppeltepfeiftafel", "y": 270, "uvlock": false }
+
+  }
+}

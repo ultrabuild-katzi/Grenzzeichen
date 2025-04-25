@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "grenzzeichen:block/gleis5zoll", "uvlock": false },
+    "facing=east":  { "model": "grenzzeichen:block/gleis5zoll", "y":  90, "uvlock": false },
+    "facing=south": { "model": "grenzzeichen:block/gleis5zoll", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "grenzzeichen:block/gleis5zoll", "y": 270, "uvlock": false }
+
+  }
+}

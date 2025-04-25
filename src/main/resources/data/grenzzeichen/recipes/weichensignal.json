@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "GPJ",
+        "BBB"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:ledlampe"
+        },
+        "G": {
+            "item": "grenzzeichen:ledlamperot"
+        },
+        "P": {
+            "item": "grenzzeichen:microcontroler"
+        },
+        "J": {
+            "item": "grenzzeichen:ledlampeweiss"
+        },
+        "B": {
+            "item": "grenzzeichen:grayiron"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:weichensignal",
+        "count": 1
+    }
+}

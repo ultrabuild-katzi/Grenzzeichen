@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "grenzzeichen:cpu"
+        },
+        {
+            "item": "grenzzeichen:chipplatte"
+        },
+        {
+            "item": "grenzzeichen:capacitor"
+        }
+    ],
+    "result": {
+        "item": "grenzzeichen:microcontroler",
+        "count": 1
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#GZ",
+        "QVL",
+        "YRY"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:ledlamperot"
+        },
+        "G": {
+            "item": "grenzzeichen:pantograph"
+        },
+        "Z": {
+            "item": "grenzzeichen:ledlampeweiss"
+        },
+        "Q": {
+            "item": "grenzzeichen:empfaenger"
+        },
+        "V": {
+            "item": "grenzzeichen:grundplatte"
+        },
+        "L": {
+            "item": "grenzzeichen:microcontroler"
+        },
+        "Y": {
+            "item": "grenzzeichen:drehgestell"
+        },
+        "R": {
+            "item": "grenzzeichen:ritzel"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:dbbre94",
+        "count": 2
+    }
+}

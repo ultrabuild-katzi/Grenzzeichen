@@ -15,12 +15,123 @@ public class ModItemGroups {
             Identifier.of(Grenzzeichen.MOD_ID,"ruby"),
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemgroup.ruby"))
-                    .icon(() -> new ItemStack(ModItems.RUBY))
+                    .icon(() -> new ItemStack(ModBlocks.GRENZZEICHEN))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.RUBY);
                         entries.add(ModBlocks.GRENZZEICHEN);
+                        entries.add(ModBlocks.WEICHENSIGNAL);
+                        entries.add(ModBlocks.OBERLEITUNGSENDESCHILD);
+                        entries.add(ModBlocks.STROMWECHSELSTART);
+                        entries.add(ModBlocks.STROMWECHSELENDE);
+                        entries.add(ModBlocks.PFEIFTAFEL);
+                        entries.add(ModBlocks.DOPPELTEPFEIFTAFEL);
+                        entries.add(ModBlocks.FUEHRERSTAND);
+                        entries.add(ModBlocks.ZS3);
+                        entries.add(ModBlocks.ZS3FUSS);
+                        entries.add(ModBlocks.ZS3HALTER);
+                        entries.add(ModBlocks.ZS3WANDH);
+                        entries.add(ModBlocks.ZS3VERLAENGERUNG);
+                        entries.add(ModBlocks.ZS3V);
+                    }).build());
+
+    public static final ItemGroup HEST = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Grenzzeichen.MOD_ID,"luly"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemgroup.luly"))
+                    .icon(() -> new ItemStack(ModBlocks.WHITESTONE))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.WHITESTONE);
+                        entries.add(ModBlocks.BLACKSTONE);
+                        entries.add(ModBlocks.REDSTONE);
 
                     }).build());
+
+    public static final ItemGroup ZEST = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Grenzzeichen.MOD_ID,"zuzy"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemgroup.zuzy"))
+                    .icon(() -> new ItemStack(ModItems.MICROCONTROLER))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.ACHSE);
+                        entries.add(ModItems.EMOTOR);
+                        entries.add(ModItems.DMOTOR);
+                        entries.add(ModItems.DREHGESTELL);
+                        entries.add(ModItems.TRAINWHEEL);
+                        entries.add(ModItems.GRAYIRON);
+                        entries.add(ModItems.MICROCONTROLER);
+                        entries.add(ModItems.CPU);
+                        entries.add(ModItems.CHIPPLATTE);
+                        entries.add(ModItems.CAPACITOR);
+                        entries.add(ModItems.RITZEL);
+                        entries.add(ModItems.GRUNDPLATTE);
+                        entries.add(ModItems.EMPFAENGER);
+                        entries.add(ModItems.DIESELTANK);
+                        entries.add(ModItems.KOLBEN);
+                        entries.add(ModItems.PANTOGRAPH);
+                        entries.add(ModItems.INTERIOR);
+
+                    }).build());
+
+    public static final ItemGroup KEST = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Grenzzeichen.MOD_ID,"dudy"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemgroup.dudy"))
+                    .icon(() -> new ItemStack(ModBlocks.V100DB))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.V100DB);
+                        entries.add(ModBlocks.V100DBROT);
+                        entries.add(ModBlocks.V200DB);
+                        entries.add(ModBlocks.DBBRE94);
+                        entries.add(ModBlocks.UICYWAGENGRUEN);
+                        entries.add(ModBlocks.UICYWAGENGRUEN2);
+                        entries.add(ModBlocks.UICYWAGENROT);
+                        entries.add(ModBlocks.DBEAOS);
+                        entries.add(ModBlocks.ICE1LOKF);
+                        entries.add(ModBlocks.ICE1LOKB);
+                        entries.add(ModBlocks.ICE1WAGEN);
+                        entries.add(ModBlocks.ICE1BISTRO);
+
+                    }).build());
+
+    public static final ItemGroup MEST = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Grenzzeichen.MOD_ID,"pupy"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemgroup.pupy"))
+                    .icon(() -> new ItemStack(ModBlocks.RAILSLOP121))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.RAILSLOP121);
+                        entries.add(ModBlocks.RAILSLOP122);
+                        entries.add(ModBlocks.RAILSLOP123);
+                        entries.add(ModBlocks.RAILSLOP124);
+                        entries.add(ModBlocks.GLEIS5ZOLL);
+                    }).build());
+
+    public static final ItemGroup LEST = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Grenzzeichen.MOD_ID,"mumy"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemgroup.mumy"))
+                    .icon(() -> new ItemStack(ModBlocks.DB_SIGN))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.DB_SIGN);
+                        entries.add(ModBlocks.DVB);
+                    }).build());
+
+    public static final ItemGroup IEST = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Grenzzeichen.MOD_ID,"iuiy"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemgroup.iuiy"))
+                    .icon(() -> new ItemStack(ModItems.LEDLAMPE))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.LEDLAMPE);
+                        entries.add(ModItems.LEDLAMPEROT);
+                        entries.add(ModItems.LEDLAMPEWEISS);
+                        entries.add(ModItems.FUEHRERSTANDSKELETT);
+                        entries.add(ModItems.DECALPLATE);
+                        entries.add(ModItems.DECAL_P);
+                        entries.add(ModItems.DECAL_DB);
+                    }).build());
+
+
+
 
 
     public static void registerItemGroups() {
