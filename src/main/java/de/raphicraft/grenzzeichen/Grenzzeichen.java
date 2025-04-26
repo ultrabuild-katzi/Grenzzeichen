@@ -25,7 +25,7 @@ public class Grenzzeichen implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModBlockEntities.registerModBlockEntities();
 
-        LOGGER.info("Strassenbahn_12 is gay (stimmt halt)");
+        LOGGER.info("Loading Grenzzeichen Mod");
     }
 
 
