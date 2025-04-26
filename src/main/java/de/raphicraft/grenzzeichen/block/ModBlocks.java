@@ -1,13 +1,20 @@
 package de.raphicraft.grenzzeichen.block;
 
+import com.jozufozu.flywheel.api.Material;
 import de.raphicraft.grenzzeichen.Grenzzeichen;
+import de.raphicraft.grenzzeichen.block.custom.Orby;
 import de.raphicraft.grenzzeichen.block.settings.*;
+import io.github.fabricators_of_create.porting_lib.models.obj.ObjMaterialLibrary;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.renderer.v1.material.MaterialFinder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block GRENZZEICHEN = registerWithItem("grenzzeichen", new GrenzzeichenBlock(
@@ -165,11 +172,23 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block GLEIS5ZOLL = registerWithItem("gleis5zoll", new gleis5zoll(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings().maxCount(1));
+                    .requiresTool().nonOpaque()),new Item.Settings().maxCount(1));
 
     public static final Block APPROACHSIGNAL = registerWithItem("approachsignal", new approachsignal(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
                     .requiresTool()),new Item.Settings().maxCount(1));
+
+
+
+                                // Animated this part is only Animated
+
+    public static final Block ORBY = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "orby"),
+            new Orby(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));
+
+
+                                       // The end of Animated
+
+
 
 
 

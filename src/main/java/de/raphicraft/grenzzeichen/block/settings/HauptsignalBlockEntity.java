@@ -1,6 +1,6 @@
 package de.raphicraft.grenzzeichen.block.settings;
 
-import de.raphicraft.grenzzeichen.block.ModBlockEntities;
+import de.raphicraft.grenzzeichen.block.entity.ModBlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.util.math.BlockPos;

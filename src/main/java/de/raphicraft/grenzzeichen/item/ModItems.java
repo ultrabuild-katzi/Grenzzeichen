@@ -1,6 +1,8 @@
 package de.raphicraft.grenzzeichen.item;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
+import de.raphicraft.grenzzeichen.block.ModBlocks;
+import de.raphicraft.grenzzeichen.item.custom.OrbyItem;
 import de.raphicraft.grenzzeichen.item.custom.TrainCapItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -35,6 +37,14 @@ public class ModItems {
     public static final Item DECAL_P = registerItem("decal_p", new Item(new Item.Settings()));
     public static final Item DECAL_DB = registerItem("decal_db", new Item(new Item.Settings()));
     public static final Item TRAINCAP = registerItem("traincap", new TrainCapItem(new Item.Settings()));
+
+
+                                         // Animated this part is only Animated
+
+    public static final Item ANIMATED_BLOCK_ITEM = registerItem("orby",
+            new OrbyItem(ModBlocks.ORBY, new Item.Settings()));
+
+                                                   // The end of Animated
 
 
 

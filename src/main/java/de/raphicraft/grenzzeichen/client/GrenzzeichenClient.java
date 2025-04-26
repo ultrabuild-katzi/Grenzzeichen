@@ -1,7 +1,9 @@
 package de.raphicraft.grenzzeichen.client;
 
-import io.github.fabricators_of_create.porting_lib.client_events.mixin.client.SoundEngineMixin;
+import de.raphicraft.grenzzeichen.block.entity.ModBlockEntities;
+import de.raphicraft.grenzzeichen.block.entity.client.OrbyRenderer;
 import net.fabricmc.api.ClientModInitializer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
 public class GrenzzeichenClient implements ClientModInitializer {
 
@@ -9,5 +11,6 @@ public class GrenzzeichenClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        BlockEntityRendererFactories.register(ModBlockEntities.ORBY_ENTITY, OrbyRenderer::new);
     }
 }

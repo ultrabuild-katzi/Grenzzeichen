@@ -1,13 +1,14 @@
 package de.raphicraft.grenzzeichen;
 
-import de.raphicraft.grenzzeichen.block.ModBlockEntities;
 import de.raphicraft.grenzzeichen.block.ModBlocks;
+import de.raphicraft.grenzzeichen.block.entity.ModBlockEntities;
 import de.raphicraft.grenzzeichen.item.ModItemGroups;
 import de.raphicraft.grenzzeichen.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib.GeckoLib;
 
 public class Grenzzeichen implements ModInitializer {
 
@@ -23,7 +24,10 @@ public class Grenzzeichen implements ModInitializer {
         ModItemGroups.registerItemGroups();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
-        ModBlockEntities.registerModBlockEntities();
+
+        ModBlockEntities.registerAllBlockEntities();
+
+        GeckoLib.initialize();
 
         LOGGER.info("Loading Grenzzeichen Mod");
     }
