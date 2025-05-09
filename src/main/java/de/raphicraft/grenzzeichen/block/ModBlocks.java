@@ -10,11 +10,14 @@ import net.fabricmc.fabric.api.renderer.v1.material.MaterialFinder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block GRENZZEICHEN = registerWithItem("grenzzeichen", new GrenzzeichenBlock(
@@ -178,9 +181,19 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
                     .requiresTool()),new Item.Settings().maxCount(1));
 
+    public static final Block BLACK_IRON_ORE = registerWithItem("black_iron_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f)));
+
+    public static final Block DEEPSLATE_BLACK_IRON_ORE = registerWithItem("deepslate_black_iron_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f)));
+
+    public static final Block GRAY_IRON_BLOCK = registerWithItem("gray_iron_block", new Block(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool()));
 
 
-                                // Animated this part is only Animated
+
+                                   // Animated this part is only Animated
 
     public static final Block ORBY = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "orby"),
             new Orby(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));

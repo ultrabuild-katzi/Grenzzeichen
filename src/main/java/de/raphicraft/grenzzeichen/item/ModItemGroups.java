@@ -128,6 +128,9 @@ public class ModItemGroups {
                         entries.add(ModItems.DECALPLATE);
                         entries.add(ModItems.DECAL_P);
                         entries.add(ModItems.DECAL_DB);
+                        entries.add(ModBlocks.BLACK_IRON_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_BLACK_IRON_ORE);
+                        entries.add(ModBlocks.GRAY_IRON_BLOCK);
                     }).build());
 
 

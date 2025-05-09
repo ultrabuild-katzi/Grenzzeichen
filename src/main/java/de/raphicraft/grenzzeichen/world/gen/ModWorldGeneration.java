@@ -1,0 +1,7 @@
+package de.raphicraft.grenzzeichen.world.gen;
+
+public class ModWorldGeneration {
+    public static void generateModWorldGen() {
+        ModOreGeneration.generateOres();
+    }
+}

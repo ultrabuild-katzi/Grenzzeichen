@@ -66,6 +66,9 @@
   "block.grenzzeichen.zs3wandh": "Signal-Wandhalterung",
   "block.grenzzeichen.zs3v": "ZS3 Vorsignal",
   "block.grenzzeichen.gleis5zoll": "Custom 5 Zoll Gleis",
+  "block.grenzzeichen.black_iron_ore": "Black Iron Ore",
+  "block.grenzzeichen.deepslate_black_iron_ore": "Deepslate Black Iron Ore",
+  "block.grenzzeichen.gray_iron_block": "Black Iron Block",
 
 
   "block.grenzzeichen.whitestone": "White Stone",

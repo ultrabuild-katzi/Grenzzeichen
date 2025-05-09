@@ -11,7 +11,7 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "de.raphicraft.grenzzeichen.datagen.GrenzzeichenDataGenerator"
+      "de.raphicraft.grenzzeichen.GrenzzeichenDataGenerator"
     ],
     "client": [
       "de.raphicraft.grenzzeichen.client.GrenzzeichenClient"

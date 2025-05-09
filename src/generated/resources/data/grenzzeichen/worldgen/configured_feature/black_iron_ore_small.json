@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 6,
+    "targets": [
+      {
+        "state": {
+          "Name": "minecraft:oak_log",
+          "Properties": {
+            "axis": "y"
+          }
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "Name": "minecraft:spruce_log",
+          "Properties": {
+            "axis": "y"
+          }
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
+        }
+      }
+    ]
+  }
+}
