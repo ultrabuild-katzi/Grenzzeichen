@@ -1,6 +1,5 @@
 package de.raphicraft.grenzzeichen;
 
-
 import de.raphicraft.grenzzeichen.datagen.AdvancementsGenerator;
 import de.raphicraft.grenzzeichen.datagen.ModWorldGenerator;
 import de.raphicraft.grenzzeichen.world.ModConfiguredFeatures;
@@ -10,7 +9,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
+/** Data generator entry */
 public class GrenzzeichenDataGenerator implements DataGeneratorEntrypoint {
+    /** Setup data generators */
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
@@ -19,6 +20,7 @@ public class GrenzzeichenDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModWorldGenerator::new);
     }
 
+    /** Setup registries */
     @Override
     public void buildRegistry(RegistryBuilder registryBuilder) {
         registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::boostrap);
