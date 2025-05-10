@@ -65,7 +65,7 @@ public class ModPlacedFeatures {
 
         register(context, BLACK_STONE_PLACED_KEY, configuredFeatureRegistryLookup.getOrThrow(ModConfiguredFeatures.BLACK_STONE_KEY),
                 ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(60))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(0))));
 
     }
 

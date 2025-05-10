@@ -28,7 +28,7 @@ fovEffectScale:1.0
 darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75
-damageTiltStrength:1.0
+damageTiltStrength:0.0
 highContrast:false
 gamma:1.0
 renderDistance:12
@@ -118,11 +118,11 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
+key_create.keyinfo.toolmenu:key.keyboard.left.alt
+key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_x13.mod.fullbright:key.keyboard.h
 key_x13.mod.locationEnable:key.keyboard.j
 key_x13.mod.config:key.keyboard.n
-key_create.keyinfo.toolmenu:key.keyboard.left.alt
-key_create.keyinfo.toolbelt:key.keyboard.left.alt
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0
