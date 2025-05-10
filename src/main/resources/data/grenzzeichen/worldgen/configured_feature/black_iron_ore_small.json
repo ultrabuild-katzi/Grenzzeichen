@@ -6,10 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "minecraft:oak_log",
-          "Properties": {
-            "axis": "y"
-          }
+          "Name": "grenzzeichen:black_iron_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
@@ -18,10 +15,7 @@
       },
       {
         "state": {
-          "Name": "minecraft:spruce_log",
-          "Properties": {
-            "axis": "y"
-          }
+          "Name": "grenzzeichen:deepslate_black_iron_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

@@ -1,23 +1,17 @@
 package de.raphicraft.grenzzeichen.block;
 
-import com.jozufozu.flywheel.api.Material;
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.custom.Orby;
 import de.raphicraft.grenzzeichen.block.settings.*;
-import io.github.fabricators_of_create.porting_lib.models.obj.ObjMaterialLibrary;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.renderer.v1.material.MaterialFinder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block GRENZZEICHEN = registerWithItem("grenzzeichen", new GrenzzeichenBlock(

@@ -29,6 +29,15 @@ public class ModPlacedFeatures {
     /** Small Black Iron Ore placement */
     public static final RegistryKey<PlacedFeature> BLACK_IRON_ORE_SMALL_PLACED_KEY = registerKey("black_iron_ore_small_placed");
 
+
+    public static final RegistryKey<PlacedFeature> RED_STONE_PLACED_KEY = registerKey("red_stone_placed");
+
+
+    public static final RegistryKey<PlacedFeature> WHITE_STONE_PLACED_KEY = registerKey("white_stone_placed");
+
+
+    public static final RegistryKey<PlacedFeature> BLACK_STONE_PLACED_KEY = registerKey("black_stone_placed");
+
     /**
      * Sets up feature placement configurations.
      */
@@ -42,6 +51,22 @@ public class ModPlacedFeatures {
         register(context, BLACK_IRON_ORE_SMALL_PLACED_KEY, configuredFeatureRegistryLookup.getOrThrow(ModConfiguredFeatures.BLACK_IRON_ORE_SMALL_KEY),
                 ModOrePlacement.modifiersWithCount(3, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(319))));
+
+
+        register(context, RED_STONE_PLACED_KEY, configuredFeatureRegistryLookup.getOrThrow(ModConfiguredFeatures.RED_STONE_KEY),
+                ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(60))));
+
+
+        register(context, WHITE_STONE_PLACED_KEY, configuredFeatureRegistryLookup.getOrThrow(ModConfiguredFeatures.WHITE_STONE_KEY),
+                ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(60))));
+
+
+        register(context, BLACK_STONE_PLACED_KEY, configuredFeatureRegistryLookup.getOrThrow(ModConfiguredFeatures.BLACK_STONE_KEY),
+                ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(60))));
+
     }
 
     /**
