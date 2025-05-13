@@ -4,6 +4,7 @@ import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.ModBlocks;
 import de.raphicraft.grenzzeichen.item.custom.OrbyItem;
 import de.raphicraft.grenzzeichen.item.custom.TrainCapItem;
+import de.raphicraft.grenzzeichen.item.custom.hauptsignalbrueckeItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -43,6 +44,8 @@ public class ModItems {
 
     public static final Item ANIMATED_BLOCK_ITEM = registerItem("orby",
             new OrbyItem(ModBlocks.ORBY, new Item.Settings()));
+    public static final Item HAUPTSIGNALBRUECKE_ANIMATED_ITEM = registerItem("hauptsignalbruecke",
+            new hauptsignalbrueckeItem(ModBlocks.HAUPTSIGNALBRUECKE, new Item.Settings()));
 
                                                    // The end of Animated
 

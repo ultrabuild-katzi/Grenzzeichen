@@ -2,6 +2,7 @@ package de.raphicraft.grenzzeichen.block;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.custom.Orby;
+import de.raphicraft.grenzzeichen.block.custom.hauptsignalbruecke;
 import de.raphicraft.grenzzeichen.block.settings.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
@@ -68,19 +69,19 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block RAILSLOP121 = registerWithItem("railslop121", new railslop121(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block RAILSLOP122 = registerWithItem("railslop122", new railslop122(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block RAILSLOP123 = registerWithItem("railslop123", new railslop123(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block RAILSLOP124 = registerWithItem("railslop124", new railslop124(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block DB_SIGN = registerWithItem("db_sign", new db_sign(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
@@ -191,6 +192,8 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block ORBY = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "orby"),
             new Orby(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));
+    public static final Block HAUPTSIGNALBRUECKE = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "hauptsignalbruecke"),
+            new hauptsignalbruecke(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));
 
 
                                        // The end of Animated

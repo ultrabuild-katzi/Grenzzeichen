@@ -18,7 +18,6 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModBlocks.GRENZZEICHEN))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.GRENZZEICHEN);
-                        entries.add(ModBlocks.WEICHENSIGNAL);
                         entries.add(ModBlocks.OBERLEITUNGSENDESCHILD);
                         entries.add(ModBlocks.STROMWECHSELSTART);
                         entries.add(ModBlocks.STROMWECHSELENDE);
@@ -131,6 +130,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLACK_IRON_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLACK_IRON_ORE);
                         entries.add(ModBlocks.GRAY_IRON_BLOCK);
+                    }).build());
+
+    public static final ItemGroup UEST = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Grenzzeichen.MOD_ID,"uuuy"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemgroup.uuuy"))
+                    .icon(() -> new ItemStack(ModBlocks.WEICHENSIGNAL))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.HAUPTSIGNALBRUECKE);
+                        entries.add(ModBlocks.APPROACHSIGNAL);
+                        entries.add(ModBlocks.WEICHENSIGNAL);
+
                     }).build());
 
 

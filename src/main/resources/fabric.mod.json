@@ -24,6 +24,7 @@
     "grenzzeichen.mixins.json"
   ],
   "depends": {
+    "architectury": "*",
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}",
