@@ -3,10 +3,18 @@ package de.raphicraft.grenzzeichen.item.custom;
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.entity.OrbyEntity;
 import de.raphicraft.grenzzeichen.block.entity.client.OrbyModel;
+import de.raphicraft.grenzzeichen.item.ModItems;
+import de.raphicraft.grenzzeichen.screen.TestScreen;
 import net.minecraft.block.Block;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.TypedActionResult;
+import net.minecraft.world.World;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.SingletonGeoAnimatable;
 import software.bernie.geckolib.animatable.client.RenderProvider;
@@ -30,6 +38,19 @@ public class OrbyItem extends BlockItem implements GeoItem {
     public OrbyItem(Block block, Settings settings) {
         super(block, settings);
         SingletonGeoAnimatable.registerSyncedAnimatable(this);
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        if (world.isClient &&
+                user.isSneaking() &&
+                user.getStackInHand(hand).getItem() == ModItems.ANIMATED_BLOCK_ITEM &&
+                MinecraftClient.getInstance().currentScreen == null) {
+
+            MinecraftClient.getInstance().setScreen(new TestScreen());
+            return TypedActionResult.success(user.getStackInHand(hand));
+        }
+        return super.use(world, user, hand);
     }
 
     @Override
