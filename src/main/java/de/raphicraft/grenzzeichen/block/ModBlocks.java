@@ -186,6 +186,10 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             AbstractBlock.Settings.create().strength(4F, 6.0F)
                     .requiresTool()));
 
+    public static final Block FAHRDIENSTLEITERKASTEN = registerWithItem("fahrdienstleiterkasten", new fahrdienstleiterkasten(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool()));
+
 
 
                                    // Animated this part is only Animated

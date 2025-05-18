@@ -23,13 +23,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STROMWECHSELENDE);
                         entries.add(ModBlocks.PFEIFTAFEL);
                         entries.add(ModBlocks.DOPPELTEPFEIFTAFEL);
+                        entries.add(ModBlocks.FAHRDIENSTLEITERKASTEN);
                         entries.add(ModBlocks.FUEHRERSTAND);
-                        entries.add(ModBlocks.ZS3);
-                        entries.add(ModBlocks.ZS3FUSS);
-                        entries.add(ModBlocks.ZS3HALTER);
-                        entries.add(ModBlocks.ZS3WANDH);
-                        entries.add(ModBlocks.ZS3VERLAENGERUNG);
-                        entries.add(ModBlocks.ZS3V);
                     }).build());
 
     public static final ItemGroup HEST = Registry.register(Registries.ITEM_GROUP,
@@ -41,6 +36,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.WHITESTONE);
                         entries.add(ModBlocks.BLACKSTONE);
                         entries.add(ModBlocks.REDSTONE);
+                        entries.add(ModBlocks.BLACK_IRON_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_BLACK_IRON_ORE);
+                        entries.add(ModBlocks.GRAY_IRON_BLOCK);
 
                     }).build());
 
@@ -127,9 +125,6 @@ public class ModItemGroups {
                         entries.add(ModItems.DECALPLATE);
                         entries.add(ModItems.DECAL_P);
                         entries.add(ModItems.DECAL_DB);
-                        entries.add(ModBlocks.BLACK_IRON_ORE);
-                        entries.add(ModBlocks.DEEPSLATE_BLACK_IRON_ORE);
-                        entries.add(ModBlocks.GRAY_IRON_BLOCK);
                     }).build());
 
     public static final ItemGroup UEST = Registry.register(Registries.ITEM_GROUP,
@@ -141,6 +136,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.HAUPTSIGNALBRUECKE);
                         entries.add(ModBlocks.APPROACHSIGNAL);
                         entries.add(ModBlocks.WEICHENSIGNAL);
+                        entries.add(ModBlocks.ZS3);
+                        entries.add(ModBlocks.ZS3FUSS);
+                        entries.add(ModBlocks.ZS3HALTER);
+                        entries.add(ModBlocks.ZS3WANDH);
+                        entries.add(ModBlocks.ZS3VERLAENGERUNG);
+                        entries.add(ModBlocks.ZS3V);
 
                     }).build());
 
