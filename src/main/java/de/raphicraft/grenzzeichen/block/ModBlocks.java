@@ -106,7 +106,7 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block DOPPELTEPFEIFTAFEL = registerWithItem("doppeltepfeiftafel", new DOPPELTEPFEIFTAFEL(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block FUEHRERSTAND = registerWithItem("fuehrerstand", new FUEHRERSTAND(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
@@ -144,10 +144,6 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
                     .requiresTool()),new Item.Settings().maxCount(1));
 
-    public static final Block ZS3 = registerWithItem("zs3", new zs3(
-            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings().maxCount(1));
-
     public static final Block ZS3FUSS = registerWithItem("zs3fuss", new zs3fuss(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
                     .requiresTool()),new Item.Settings().maxCount(1));
@@ -161,10 +157,6 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
                     .requiresTool()),new Item.Settings().maxCount(1));
 
     public static final Block ZS3WANDH = registerWithItem("zs3wandh", new zs3wandh(
-            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings().maxCount(1));
-
-    public static final Block ZS3V = registerWithItem("zs3v", new zs3v(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
                     .requiresTool()),new Item.Settings().maxCount(1));
 
@@ -190,7 +182,88 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             AbstractBlock.Settings.create().strength(4F, 6.0F)
                     .requiresTool()));
 
+    public static final Block TEST = registerWithItem("test", new Block(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool()));
 
+
+    public static final Block RA10 = registerWithItem("ra10", new Ra10(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool()));
+
+    public static final Block RA10LEER = registerWithItem("ra10leer", new Ra10leer(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool()));
+
+    //ZS3
+    public static final Block ZS3_10 = registerWithItem("zs3_10", new zs3_10(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_20 = registerWithItem("zs3_20", new zs3_20(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_30 = registerWithItem("zs3_30", new zs3_30(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_40 = registerWithItem("zs3_40", new zs3_40(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_50 = registerWithItem("zs3_50", new zs3_50(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_60 = registerWithItem("zs3_60", new zs3_60(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_70 = registerWithItem("zs3_70", new zs3_70(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_80 = registerWithItem("zs3_80", new zs3_80(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_90 = registerWithItem("zs3_90", new zs3_90(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_100 = registerWithItem("zs3_100", new zs3_100(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_110 = registerWithItem("zs3_110", new zs3_110(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_120 = registerWithItem("zs3_120", new zs3_120(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_130 = registerWithItem("zs3_130", new zs3_130(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_140 = registerWithItem("zs3_140", new zs3_140(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_150 = registerWithItem("zs3_150", new zs3_150(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+
+    public static final Block ZS3_160 = registerWithItem("zs3_160", new zs3_160(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
+    //ZS3 Vorsignal
+
+    public static final Block ZS3V = registerWithItem("zs3v", new zs3v(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool()),new Item.Settings().maxCount(1));
 
                                    // Animated this part is only Animated
 

@@ -60,21 +60,49 @@
   "block.grenzzeichen.fuehrerstand": "Führerstand modern",
   "block.grenzzeichen.trainseat1": "a seat i guess",
   "block.grenzzeichen.db_sign": "DB Sign groß",
-  "block.grenzzeichen.zs3": "ZS3 Signal",
   "block.grenzzeichen.zs3fuss": "Fuß für Signalhalterung",
   "block.grenzzeichen.zs3halter": "Halterung für ZS3",
   "block.grenzzeichen.zs3verlaengerung": "Verlängerung für Signalhalterung",
   "block.grenzzeichen.zs3wandh": "Signal-Wandhalterung",
-  "block.grenzzeichen.zs3v": "ZS3 Vorsignal",
   "block.grenzzeichen.gleis5zoll": "Custom 5 Zoll Gleis",
   "block.grenzzeichen.hauptsignalbruecke": "Hauptsignal als halbes Brückensignal",
   "block.grenzzeichen.orby": "A little Orby :)",
   "block.grenzzeichen.fahrdienstleiterkasten": "Fahrdienstleiterkasten",
+  "block.grenzzeichen.approachsignal": "Lichtvorsignal",
+  "block.grenzzeichen.ra10": "Rangierhalttafel Ra10",
+  "block.grenzzeichen.ra10leer": "Rangierhalttafel Ra10 (ohne Schrift)",
+  "block.grenzzeichen.dvb": "DVB Decal (Copycat-dicke)",
 
 
   "block.grenzzeichen.whitestone": "White Stone",
   "block.grenzzeichen.blackstone": "Black Stone",
   "block.grenzzeichen.redstone": "Red Stone",
+
+  "block.grenzzeichen.zs3_10": "ZS3 Signal 10km/h",
+  "block.grenzzeichen.zs3_20": "ZS3 Signal 20km/h",
+  "block.grenzzeichen.zs3_30": "ZS3 Signal 30km/h",
+  "block.grenzzeichen.zs3_40": "ZS3 Signal 40km/h",
+  "block.grenzzeichen.zs3_50": "ZS3 Signal 50km/h",
+  "block.grenzzeichen.zs3_60": "ZS3 Signal 60km/h",
+  "block.grenzzeichen.zs3_70": "ZS3 Signal 70km/h",
+  "block.grenzzeichen.zs3_80": "ZS3 Signal 80km/h",
+  "block.grenzzeichen.zs3_90": "ZS3 Signal 90km/h",
+  "block.grenzzeichen.zs3_100": "ZS3 Signal 100km/h",
+  "block.grenzzeichen.zs3_110": "ZS3 Signal 110km/h",
+  "block.grenzzeichen.zs3_120": "ZS3 Signal 120km/h",
+  "block.grenzzeichen.zs3_130": "ZS3 Signal 130km/h",
+  "block.grenzzeichen.zs3_140": "ZS3 Signal 140km/h",
+  "block.grenzzeichen.zs3_150": "ZS3 Signal 150km/h",
+  "block.grenzzeichen.zs3_160": "ZS3 Signal 160km/h",
+
+  "block.grenzzeichen.zs3v": "ZS3 Vorsignal 160km/h",
+
+
+  "block.grenzzeichen.black_iron_ore": "Black Iron Ore",
+  "block.grenzzeichen.deepslate_black_iron_ore": "Deepslate Black Iron Ore",
+  "block.grenzzeichen.gray_iron_block": "Gray Iron Block",
+
+
 
 
   "item.grenzzeichen.traincap": "Lokführermütze"

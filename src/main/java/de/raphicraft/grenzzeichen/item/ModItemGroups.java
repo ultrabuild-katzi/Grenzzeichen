@@ -136,11 +136,32 @@ public class ModItemGroups {
                         entries.add(ModBlocks.HAUPTSIGNALBRUECKE);
                         entries.add(ModBlocks.APPROACHSIGNAL);
                         entries.add(ModBlocks.WEICHENSIGNAL);
-                        entries.add(ModBlocks.ZS3);
                         entries.add(ModBlocks.ZS3FUSS);
                         entries.add(ModBlocks.ZS3HALTER);
                         entries.add(ModBlocks.ZS3WANDH);
                         entries.add(ModBlocks.ZS3VERLAENGERUNG);
+                        entries.add(ModBlocks.RA10);
+                        entries.add(ModBlocks.RA10LEER);
+
+                        //ZS3 Signale
+                        entries.add(ModBlocks.ZS3_10);
+                        entries.add(ModBlocks.ZS3_20);
+                        entries.add(ModBlocks.ZS3_30);
+                        entries.add(ModBlocks.ZS3_40);
+                        entries.add(ModBlocks.ZS3_50);
+                        entries.add(ModBlocks.ZS3_60);
+                        entries.add(ModBlocks.ZS3_70);
+                        entries.add(ModBlocks.ZS3_80);
+                        entries.add(ModBlocks.ZS3_90);
+                        entries.add(ModBlocks.ZS3_100);
+                        entries.add(ModBlocks.ZS3_110);
+                        entries.add(ModBlocks.ZS3_120);
+                        entries.add(ModBlocks.ZS3_130);
+                        entries.add(ModBlocks.ZS3_140);
+                        entries.add(ModBlocks.ZS3_150);
+                        entries.add(ModBlocks.ZS3_160);
+
+                        //ZS3 Vorsignale
                         entries.add(ModBlocks.ZS3V);
 
                     }).build());
