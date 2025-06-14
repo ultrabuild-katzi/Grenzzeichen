@@ -44,7 +44,6 @@ public class OrbyItem extends BlockItem implements GeoItem {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (world.isClient &&
                 user.isSneaking() &&
-                user.getStackInHand(hand).getItem() == ModItems.ANIMATED_BLOCK_ITEM &&
                 MinecraftClient.getInstance().currentScreen == null) {
 
             MinecraftClient.getInstance().setScreen(new TestScreen());
