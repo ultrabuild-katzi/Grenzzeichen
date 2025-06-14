@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "grenzzeichen:grenzzeichen"
+    },
+    "title": "more stones?!",
+    "description": "craft the colorful stones",
+    "background": "grenzzeichen:textures/block/redstone",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "got_wagen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "slots": {
+          "full": 4
+        },
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:ice1wagen"
+            ]
+          },
+          {
+            "items": [
+              "grenzzeichen:ice1wagen"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": []
+}

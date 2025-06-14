@@ -130,19 +130,19 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block ICE1LOKF = registerWithItem("ice1lokf", new ice1lokf(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings().maxCount(1));
+                    .requiresTool()),new Item.Settings().maxCount(2));
 
     public static final Block ICE1LOKB = registerWithItem("ice1lokb", new ice1lokb(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings().maxCount(1));
+                    .requiresTool()),new Item.Settings().maxCount(2));
 
     public static final Block ICE1WAGEN = registerWithItem("ice1wagen", new ice1wagen(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings().maxCount(1));
+                    .requiresTool()),new Item.Settings().maxCount(16));
 
     public static final Block ICE1BISTRO = registerWithItem("ice1bistro", new ice1bistro(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings().maxCount(1));
+                    .requiresTool()),new Item.Settings().maxCount(2));
 
     public static final Block ZS3FUSS = registerWithItem("zs3fuss", new zs3fuss(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)

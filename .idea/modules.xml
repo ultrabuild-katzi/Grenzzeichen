@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Grenzzeichen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Grenzzeichen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Grenzzeichen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Grenzzeichen.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IdeaProjects.Grenzzeichen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/IdeaProjects.Grenzzeichen.main.iml" />
     </modules>
   </component>
 </project>
