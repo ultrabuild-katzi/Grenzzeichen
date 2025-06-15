@@ -195,6 +195,10 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             AbstractBlock.Settings.create().strength(4F, 6.0F)
                     .requiresTool()));
 
+    public static final Block HAZARDBLOCK = registerWithItem("hazardblock", new Block(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool()));
+
     //ZS3
     public static final Block ZS3_10 = registerWithItem("zs3_10", new zs3_10(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)

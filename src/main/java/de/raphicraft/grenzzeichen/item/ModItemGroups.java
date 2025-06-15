@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FUEHRERSTAND);
                         entries.add(ModBlocks.DB_SIGN);
                         entries.add(ModBlocks.DVB);
+                        entries.add(ModBlocks.HAZARDBLOCK);
                         //Items
                         entries.add(ModItems.LEDLAMPE);
                         entries.add(ModItems.LEDLAMPEROT);
