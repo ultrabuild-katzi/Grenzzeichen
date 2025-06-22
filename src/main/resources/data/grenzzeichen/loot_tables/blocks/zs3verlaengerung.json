@@ -12,11 +12,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "grenzzeichen:zs3verlängerung"
+          "name": "grenzzeichen:zs3verlaengerung"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "grenzzeichen:blocks/zs3verlängerung"
+  "random_sequence": "grenzzeichen:blocks/zs3verlaengerung"
 }
