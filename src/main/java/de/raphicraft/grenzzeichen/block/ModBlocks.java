@@ -21,51 +21,51 @@ public class ModBlocks {
 
 public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new WeichensignalBlock(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block HAUPTSIGNAL = registerWithItem("hauptsignal", new HauptsignalBlock(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block V100DB = registerWithItem("v100db", new V100db(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block V100DBROT = registerWithItem("v100dbrot", new V100dbRot(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block V200DB = registerWithItem("v200db", new V200db(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block UICYWAGENGRUEN = registerWithItem("uicywagengruen", new UICYWagengruen(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block UICYWAGENGRUEN2 = registerWithItem("uicywagengruen2", new UICYWagengruen2(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block UICYWAGENROT = registerWithItem("uicywagenrot", new UICYWagenrot(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block UICYWAGENADVANCEMENTS = registerWithItem("uicywagenadvancements", new uicywagenadvancements(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block DBEAOS = registerWithItem("dbeaos", new DBEAOS(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block DBBRE94 = registerWithItem("dbbre94", new DBBRE94(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block TRAINSEAT = registerWithItem("trainseat1", new trainseat(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block RAILSLOP121 = registerWithItem("railslop121", new railslop121(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
@@ -89,19 +89,19 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block OBERLEITUNGSENDESCHILD = registerWithItem("oberleitungsendeschild", new OberleitungsEndeSchild(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block STROMWECHSELSTART = registerWithItem("stromwechselstart", new StromwechselStart(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block STROMWECHSELENDE = registerWithItem("stromwechselende", new StromWechselEnde(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block PFEIFTAFEL = registerWithItem("pfeiftafel", new PFEIFTAFEL(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
 
     public static final Block DOPPELTEPFEIFTAFEL = registerWithItem("doppeltepfeiftafel", new DOPPELTEPFEIFTAFEL(
@@ -126,7 +126,7 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block DVB = registerWithItem("dvb", new dvb(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block ICE1LOKF = registerWithItem("ice1lokf", new ice1lokf(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
@@ -146,19 +146,19 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block ZS3FUSS = registerWithItem("zs3fuss", new zs3fuss(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings());
+                    .requiresTool().nonOpaque()),new Item.Settings());
 
     public static final Block ZS3HALTER = registerWithItem("zs3halter", new zs3halter(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings());
+                    .requiresTool().nonOpaque()),new Item.Settings());
 
     public static final Block ZS3VERLAENGERUNG = registerWithItem("zs3verlaengerung", new zs3verlaengerung(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings());
+                    .requiresTool().nonOpaque()),new Item.Settings());
 
     public static final Block ZS3WANDH = registerWithItem("zs3wandh", new zs3wandh(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings());
+                    .requiresTool().nonOpaque()),new Item.Settings());
 
     public static final Block GLEIS5ZOLL = registerWithItem("gleis5zoll", new gleis5zoll(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
@@ -166,7 +166,7 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block APPROACHSIGNAL = registerWithItem("approachsignal", new approachsignal(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool()),new Item.Settings());
+                    .requiresTool().nonOpaque()),new Item.Settings());
 
     public static final Block BLACK_IRON_ORE = registerWithItem("black_iron_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f)));
@@ -180,7 +180,7 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block FAHRDIENSTLEITERKASTEN = registerWithItem("fahrdienstleiterkasten", new fahrdienstleiterkasten(
             AbstractBlock.Settings.create().strength(4F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block TEST = registerWithItem("test", new Block(
             AbstractBlock.Settings.create().strength(4F, 6.0F)
@@ -189,11 +189,11 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block RA10 = registerWithItem("ra10", new Ra10(
             AbstractBlock.Settings.create().strength(4F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block RA10LEER = registerWithItem("ra10leer", new Ra10leer(
             AbstractBlock.Settings.create().strength(4F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
 
     public static final Block HAZARDBLOCK = registerWithItem("hazardblock", new Block(
             AbstractBlock.Settings.create().strength(4F, 6.0F)

@@ -17,6 +17,8 @@ public class GrenzzeichenBlock extends Block {
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext ctx) {
         return VoxelShapes.cuboid(0.25f, 0.0f, 0.25f, 0.75f, 0.5f, 0.75f);
 
+
+
     }
 
 }

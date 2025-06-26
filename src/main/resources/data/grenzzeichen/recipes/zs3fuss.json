@@ -1,20 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "iii",
-        "iRi",
+        " i ",
+        " i ",
         "iii"
     ],
     "key": {
         "i": {
             "item": "minecraft:iron_ingot"
-        },
-        "R": {
-            "item": "minecraft:redstone_block"
         }
     },
     "result": {
-        "item": "grenzzeichen:zs3_160",
+        "item": "grenzzeichen:zs3fuss",
         "count": 1
     }
 }

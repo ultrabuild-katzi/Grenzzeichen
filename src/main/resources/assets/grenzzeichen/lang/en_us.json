@@ -52,9 +52,9 @@
   "block.grenzzeichen.railslop122": "Steigung 12 Blöcke (2)",
   "block.grenzzeichen.railslop123": "Steigung 12 Blöcke (3)",
   "block.grenzzeichen.railslop124": "Steigung 12 Blöcke (4)",
-  "block.grenzzeichen.oberleitungsendeschild": "Oberleitungsende",
-  "block.grenzzeichen.stromwechselende": "Stromwechsel-Ende",
-  "block.grenzzeichen.stromwechselstart": "Stromwechsel-Start",
+  "block.grenzzeichen.oberleitungsendeschild": "Signal El 6 (Halt für Fahrzeuge mit gehobenen Stromabnehmern)",
+  "block.grenzzeichen.stromwechselende": "Signal El 2 – Einschaltsignal",
+  "block.grenzzeichen.stromwechselstart": "Signal El 1 – Ausschaltsignal",
   "block.grenzzeichen.pfeiftafel": "Signal Bü 4 – Pfeiftafel",
   "block.grenzzeichen.doppeltepfeiftafel": "Signal Pf 2 – Pfeiftafel vor Bahnübergängen (DV 301)",
   "block.grenzzeichen.fuehrerstand": "Führerstand modern",
@@ -101,7 +101,7 @@
 
   "block.grenzzeichen.black_iron_ore": "Black Iron Ore",
   "block.grenzzeichen.deepslate_black_iron_ore": "Deepslate Black Iron Ore",
-  "block.grenzzeichen.gray_iron_block": "Gray Iron Block",
+  "block.grenzzeichen.gray_iron_block": "Black Iron Block",
 
 
 

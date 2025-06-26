@@ -1,20 +1,20 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "grenzzeichen:block/oberleitungsendeschild",
-		"1": "grenzzeichen:block/oberleitungsendeschild",
 		"particle": "grenzzeichen:block/oberleitungsendeschild"
 	},
 	"elements": [
 		{
-			"from": [6.34, 4, 8],
-			"to": [18.34, 16, 8],
-			"rotation": {"angle": 45, "axis": "z", "origin": [12, 4, 6]},
+			"from": [6.34, 4, 15.9],
+			"to": [18.34, 16, 16],
+			"rotation": {"angle": 45, "axis": "z", "origin": [12, 4, 13.9]},
 			"faces": {
-				"north": {"uv": [0, 0, 6, 6], "texture": "#1"},
+				"north": {"uv": [0, 0, 6, 6], "texture": "#0"},
 				"east": {"uv": [0, 0, 0, 6], "texture": "#0"},
-				"south": {"uv": [0, 6, 6, 12], "texture": "#1"},
+				"south": {"uv": [0, 6, 6, 12], "texture": "#0"},
 				"west": {"uv": [0, 0, 0, 6], "texture": "#0"},
 				"up": {"uv": [6, 0, 0, 0], "texture": "#0"},
 				"down": {"uv": [6, 0, 0, 0], "texture": "#0"}
@@ -23,7 +23,7 @@
 	],
 	"display": {
 		"gui": {
-			"rotation": [0, 180, 0]
+			"rotation": [0, -180, 0]
 		}
 	}
 }
