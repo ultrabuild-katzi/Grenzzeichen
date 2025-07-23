@@ -4,6 +4,7 @@
   "package": "de.raphicraft.grenzzeichen.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+
   ],
   "client": [
   ],

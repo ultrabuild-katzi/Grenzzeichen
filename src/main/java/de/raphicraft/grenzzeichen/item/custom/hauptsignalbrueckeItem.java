@@ -2,8 +2,20 @@ package de.raphicraft.grenzzeichen.item.custom;
 
 import de.raphicraft.grenzzeichen.block.entity.client.hauptsignalbrueckeModel;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.stat.Stats;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.SingletonGeoAnimatable;
 import software.bernie.geckolib.animatable.client.RenderProvider;
@@ -20,6 +32,7 @@ import java.util.function.Supplier;
 public class hauptsignalbrueckeItem extends BlockItem implements GeoItem {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
+    int signalCooldownSec = ((30)) * 20;
 
     public hauptsignalbrueckeItem(Block block, Settings settings) {
         super(block, settings);
@@ -61,4 +74,11 @@ public class hauptsignalbrueckeItem extends BlockItem implements GeoItem {
         return cache;
     }
 
+    @Override
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        if (attacker instanceof PlayerEntity player) {
+            player.getItemCooldownManager().set(this, signalCooldownSec);
+        }
+        return false;
+    }
 }
