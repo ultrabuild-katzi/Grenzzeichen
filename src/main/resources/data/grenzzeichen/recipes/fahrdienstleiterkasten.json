@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#GL",
+        "STD",
+        "UiU"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:ledlampegruen"
+        },
+        "G": {
+            "item": "grenzzeichen:microcontroler"
+        },
+        "L": {
+            "item": "minecraft:lever"
+        },
+        "S": {
+            "tag": "minecraft:buttons"
+        },
+        "T": {
+            "item": "grenzzeichen:empfaenger"
+        },
+        "D": {
+            "item": "grenzzeichen:ledlampeweiss"
+        },
+        "U": {
+            "item": "grenzzeichen:grayiron"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:fahrdienstleiterkasten",
+        "count": 1
+    }
+}

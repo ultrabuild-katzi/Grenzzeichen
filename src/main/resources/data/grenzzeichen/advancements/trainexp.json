@@ -71,6 +71,54 @@
           }
         ]
       }
+    },
+    "6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:fahrdienstleiterkasten"
+            ]
+          }
+        ]
+      }
+    },
+    "7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:ra10"
+            ]
+          }
+        ]
+      }
+    },
+    "8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:ra10leer"
+            ]
+          }
+        ]
+      }
+    },
+    "9": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grenzzeichen:hauptsignalbruecke"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [],

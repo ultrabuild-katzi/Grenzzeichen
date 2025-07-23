@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "G"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:schiene"
+        },
+        "G": {
+            "item": "grenzzeichen:schwelle"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:gleis5zoll",
+        "count": 1
+    }
+}

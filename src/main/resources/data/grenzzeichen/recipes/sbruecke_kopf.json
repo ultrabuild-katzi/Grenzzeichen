@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#GG",
+        "VVB",
+        "GBG"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:ledlamperot"
+        },
+        "G": {
+            "item": "minecraft:green_dye"
+        },
+        "V": {
+            "item": "grenzzeichen:ledlampegruen"
+        },
+        "B": {
+            "item": "minecraft:black_dye"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:sbruecke_kopf",
+        "count": 1
+    }
+}

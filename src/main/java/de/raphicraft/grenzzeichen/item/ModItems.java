@@ -5,7 +5,7 @@ import de.raphicraft.grenzzeichen.block.ModBlocks;
 import de.raphicraft.grenzzeichen.item.custom.OrbyItem;
 import de.raphicraft.grenzzeichen.item.custom.TrainCapItem;
 import de.raphicraft.grenzzeichen.item.custom.hauptsignalbrueckeItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -20,6 +20,7 @@ public class ModItems {
     public static final Item LEDLAMPE = registerItem("ledlampe", new Item(new Item.Settings()));
     public static final Item LEDLAMPEROT = registerItem("ledlamperot", new Item(new Item.Settings()));
     public static final Item LEDLAMPEWEISS = registerItem("ledlampeweiss", new Item(new Item.Settings()));
+    public static final Item LEDLAMPEGRUEN = registerItem("ledlampegruen", new Item(new Item.Settings()));
     public static final Item TRAINWHEEL = registerItem("trainwheel", new Item(new Item.Settings()));
     public static final Item GRAYIRON = registerItem("grayiron", new Item(new Item.Settings()));
     public static final Item MICROCONTROLER = registerItem("microcontroler", new Item(new Item.Settings()));
@@ -37,7 +38,21 @@ public class ModItems {
     public static final Item DECALPLATE = registerItem("decalplate", new Item(new Item.Settings()));
     public static final Item DECAL_P = registerItem("decal_p", new Item(new Item.Settings()));
     public static final Item DECAL_DB = registerItem("decal_db", new Item(new Item.Settings()));
+    public static final Item SBRUECKE_KOPF = registerItem("sbruecke_kopf", new Item(new Item.Settings()));
+    public static final Item SBRUECKE_CATWALK = registerItem("sbruecke_catwalk", new Item(new Item.Settings()));
+    public static final Item SBRUECKE_STAND = registerItem("sbruecke_stand", new Item(new Item.Settings()));
+    public static final Item SCHIENE = registerItem("schiene", new Item(new Item.Settings()));
+    public static final Item SCHWELLE = registerItem("schwelle", new Item(new Item.Settings()));
+    public static final Item EISENSTANGE = registerItem("eisenstange", new Item(new Item.Settings()));
+
     public static final Item TRAINCAP = registerItem("traincap", new TrainCapItem(new Item.Settings()));
+
+
+    public static final Item BLACK_IRON_PICKAXE = registerItem("black_iron_pickaxe", new PickaxeItem(ToolMaterials.IRON,1,-2.8f,new Item.Settings()));
+    public static final Item BLACK_IRON_AXE = registerItem("black_iron_axe", new AxeItem(ToolMaterials.IRON,6,-3.1f,new Item.Settings()));
+    public static final Item BLACK_IRON_SHOVEL = registerItem("black_iron_shovel", new ShovelItem(ToolMaterials.IRON,1.5f,-3.0f,new Item.Settings()));
+    public static final Item BLACK_IRON_HOE = registerItem("black_iron_hoe", new HoeItem(ToolMaterials.IRON,-2,-1.0f,new Item.Settings()));
+    public static final Item BLACK_IRON_SWORD = registerItem("black_iron_sword", new HoeItem(ToolMaterials.IRON,3,-2.4f,new Item.Settings()));
 
 
                                          // Animated this part is only Animated

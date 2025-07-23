@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#GG",
+        "  D",
+        "  D"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:sbruecke_kopf"
+        },
+        "G": {
+            "item": "grenzzeichen:sbruecke_catwalk"
+        },
+        "D": {
+            "item": "grenzzeichen:sbruecke_stand"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:hauptsignalbruecke",
+        "count": 1
+    }
+}

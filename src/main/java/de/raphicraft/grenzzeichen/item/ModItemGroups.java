@@ -11,32 +11,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup DEST = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Grenzzeichen.MOD_ID,"ruby"),
-            FabricItemGroup.builder()
-                    .displayName(Text.translatable("itemgroup.ruby"))
-                    .icon(() -> new ItemStack(ModBlocks.GRENZZEICHEN))
-                    .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.GRENZZEICHEN);
-                        entries.add(ModBlocks.OBERLEITUNGSENDESCHILD);
-                        entries.add(ModBlocks.STROMWECHSELSTART);
-                        entries.add(ModBlocks.STROMWECHSELENDE);
-                        entries.add(ModBlocks.PFEIFTAFEL);
-                        entries.add(ModBlocks.DOPPELTEPFEIFTAFEL);
-                        entries.add(ModBlocks.FAHRDIENSTLEITERKASTEN);
-                        entries.add(ModBlocks.FUEHRERSTAND);
-                        entries.add(ModBlocks.DB_SIGN);
-                        entries.add(ModBlocks.DVB);
-                        entries.add(ModBlocks.HAZARDBLOCK);
-                        //Items
-                        entries.add(ModItems.LEDLAMPE);
-                        entries.add(ModItems.LEDLAMPEROT);
-                        entries.add(ModItems.LEDLAMPEWEISS);
-                        entries.add(ModItems.FUEHRERSTANDSKELETT);
-                        entries.add(ModItems.DECALPLATE);
-                        entries.add(ModItems.DECAL_P);
-                        entries.add(ModItems.DECAL_DB);
-                    }).build());
 
     public static final ItemGroup HEST = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Grenzzeichen.MOD_ID,"luly"),
@@ -50,6 +24,29 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLACK_IRON_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLACK_IRON_ORE);
                         entries.add(ModBlocks.GRAY_IRON_BLOCK);
+                        entries.add(ModBlocks.FAHRDIENSTLEITERKASTEN);
+                        entries.add(ModBlocks.FUEHRERSTAND);
+                        entries.add(ModBlocks.DB_SIGN);
+                        entries.add(ModBlocks.DVB);
+                        entries.add(ModBlocks.HAZARDBLOCK);
+                        //Items
+                        entries.add(ModItems.LEDLAMPE);
+                        entries.add(ModItems.LEDLAMPEROT);
+                        entries.add(ModItems.LEDLAMPEWEISS);
+                        entries.add(ModItems.LEDLAMPEGRUEN);
+                        entries.add(ModItems.FUEHRERSTANDSKELETT);
+                        entries.add(ModItems.DECALPLATE);
+                        entries.add(ModItems.DECAL_P);
+                        entries.add(ModItems.DECAL_DB);
+                        entries.add(ModItems.SBRUECKE_KOPF);
+                        entries.add(ModItems.SBRUECKE_CATWALK);
+                        entries.add(ModItems.SBRUECKE_STAND);
+                        //Tools
+                        entries.add(ModItems.BLACK_IRON_PICKAXE);
+                        entries.add(ModItems.BLACK_IRON_AXE);
+                        entries.add(ModItems.BLACK_IRON_SHOVEL);
+                        entries.add(ModItems.BLACK_IRON_HOE);
+                        entries.add(ModItems.BLACK_IRON_SWORD);
 
                     }).build());
 
@@ -96,6 +93,9 @@ public class ModItemGroups {
                         entries.add(ModItems.KOLBEN);
                         entries.add(ModItems.PANTOGRAPH);
                         entries.add(ModItems.INTERIOR);
+                        entries.add(ModItems.SCHIENE);
+                        entries.add(ModItems.SCHWELLE);
+                        entries.add(ModItems.EISENSTANGE);
 
                     }).build());
 
@@ -114,6 +114,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ZS3VERLAENGERUNG);
                         entries.add(ModBlocks.RA10);
                         entries.add(ModBlocks.RA10LEER);
+                        entries.add(ModBlocks.GRENZZEICHEN);
+                        entries.add(ModBlocks.OBERLEITUNGSENDESCHILD);
+                        entries.add(ModBlocks.STROMWECHSELSTART);
+                        entries.add(ModBlocks.STROMWECHSELENDE);
+                        entries.add(ModBlocks.PFEIFTAFEL);
+                        entries.add(ModBlocks.DOPPELTEPFEIFTAFEL);
 
                         //ZS3 Signale
                         entries.add(ModBlocks.ZS3_10);
@@ -137,8 +143,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ZS3V);
 
                     }).build());
-
-
 
 
 

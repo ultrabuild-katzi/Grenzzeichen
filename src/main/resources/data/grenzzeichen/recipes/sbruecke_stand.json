@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iGi",
+        "GSG",
+        "EEE"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "G": {
+            "item": "minecraft:green_dye"
+        },
+        "S": {
+            "item": "grenzzeichen:grayiron"
+        },
+        "E": {
+            "item": "minecraft:smooth_stone"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:sbruecke_stand",
+        "count": 1
+    }
+}
