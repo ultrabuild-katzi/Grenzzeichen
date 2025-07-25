@@ -3,6 +3,7 @@ package de.raphicraft.grenzzeichen.item;
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.ModBlocks;
 import de.raphicraft.grenzzeichen.item.custom.OrbyItem;
+import de.raphicraft.grenzzeichen.item.custom.TrackploughItem;
 import de.raphicraft.grenzzeichen.item.custom.TrainCapItem;
 import de.raphicraft.grenzzeichen.item.custom.hauptsignalbrueckeItem;
 import net.minecraft.item.*;
@@ -46,6 +47,7 @@ public class ModItems {
     public static final Item EISENSTANGE = registerItem("eisenstange", new Item(new Item.Settings()));
 
     public static final Item TRAINCAP = registerItem("traincap", new TrainCapItem(new Item.Settings()));
+    public static final Item TRACK_PLOUGHITEM = registerItem("track_plough", new TrackploughItem(ModBlocks.TRACK_PLOUGH, new Item.Settings()));
 
 
     public static final Item BLACK_IRON_PICKAXE = registerItem("black_iron_pickaxe", new PickaxeItem(ToolMaterials.IRON,1,-2.8f,new Item.Settings()));

@@ -186,6 +186,10 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             AbstractBlock.Settings.create().strength(4F, 6.0F)
                     .requiresTool()));
 
+    public static final Block TRACK_PLOUGH = register("track_plough", new track_plough(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool().nonOpaque()));
+
 
     public static final Block RA10 = registerWithItem("ra10", new Ra10(
             AbstractBlock.Settings.create().strength(4F, 6.0F)

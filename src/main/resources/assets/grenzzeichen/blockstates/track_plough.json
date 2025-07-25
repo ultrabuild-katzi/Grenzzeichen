@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "grenzzeichen:block/track_plough", "y":  180,"uvlock": false },
+    "facing=east":  { "model": "grenzzeichen:block/track_plough", "y":  270, "uvlock": false },
+    "facing=south": { "model": "grenzzeichen:block/track_plough", "y": 0, "uvlock": false },
+    "facing=west":  { "model": "grenzzeichen:block/track_plough", "y": 90, "uvlock": false }
+
+  }
+}

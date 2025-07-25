@@ -29,6 +29,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DB_SIGN);
                         entries.add(ModBlocks.DVB);
                         entries.add(ModBlocks.HAZARDBLOCK);
+                        entries.add(ModItems.TRACK_PLOUGHITEM);
                         //Items
                         entries.add(ModItems.LEDLAMPE);
                         entries.add(ModItems.LEDLAMPEROT);
@@ -120,6 +121,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STROMWECHSELENDE);
                         entries.add(ModBlocks.PFEIFTAFEL);
                         entries.add(ModBlocks.DOPPELTEPFEIFTAFEL);
+
 
                         //ZS3 Signale
                         entries.add(ModBlocks.ZS3_10);

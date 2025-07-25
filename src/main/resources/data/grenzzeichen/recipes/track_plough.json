@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#G#",
+        "i i"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:grayiron"
+        },
+        "G": {
+            "item": "minecraft:gray_concrete"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:track_plough",
+        "count": 1
+    }
+}

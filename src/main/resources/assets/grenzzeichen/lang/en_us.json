@@ -84,6 +84,8 @@
   "block.grenzzeichen.ra10leer": "Signal Ra 10 – Rangierhalttafel (ohne Schrift)",
   "block.grenzzeichen.dvb": "DVB Decal (Copycat-dicke)",
   "block.grenzzeichen.hazardblock": "Hazard Block",
+  "block.grenzzeichen.track_plough": "Schienenräumer",
+  "item.grenzzeichen.trackploughitem": "Schienenräumer",
 
 
   "block.grenzzeichen.whitestone": "White Stone",
