@@ -1,3 +1,6 @@
 {
-	"parent": "grenzzeichen:block/black_iron_crystal_lamp"
-}
+    "parent": "item/generated",
+    "textures": {
+      "layer0": "grenzzeichen:item/black_iron_crystal_lamp"
+    }
+  }

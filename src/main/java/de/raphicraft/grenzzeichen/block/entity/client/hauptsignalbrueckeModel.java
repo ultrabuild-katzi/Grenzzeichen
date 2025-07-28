@@ -22,10 +22,10 @@ public class hauptsignalbrueckeModel<T extends GeoAnimatable> extends GeoModel<T
                     .orElse(false);
 
             return powered
-                    ? new Identifier("grenzzeichen", "textures/block/hauptsignalbruecke_off.png")
-                    : new Identifier("grenzzeichen", "textures/block/hauptsignalbruecke.png");
+                    ? new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_red.png")
+                    : new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_green.png");
         }
-        return new Identifier("grenzzeichen", "textures/block/hauptsignalbruecke.png");
+        return new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_green.png");
     }
 
     @Override

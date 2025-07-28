@@ -35,6 +35,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.HAZARDBLOCK);
                         entries.add(ModItems.TRACK_PLOUGHITEM);
                         entries.add(ModBlocks.FREEZER);
+                        entries.add(ModBlocks.BLACK_IRON_CRYSTAL_LAMP);
                         //Items
                         entries.add(ModItems.LEDLAMPE);
                         entries.add(ModItems.LEDLAMPEROT);
