@@ -1,10 +1,10 @@
 
 {
   "variants": {
+
     "facing=north": { "model": "grenzzeichen:block/hauptsignalbruecke", "y": 180, "uvlock": false },
     "facing=east":  { "model": "grenzzeichen:block/hauptsignalbruecke", "y":  270, "uvlock": false },
     "facing=south": { "model": "grenzzeichen:block/hauptsignalbruecke", "y": 0, "uvlock": false },
     "facing=west":  { "model": "grenzzeichen:block/hauptsignalbruecke", "y": 90, "uvlock": false }
-
   }
 }

@@ -1,23 +1,34 @@
 package de.raphicraft.grenzzeichen.block.custom;
 
-import de.raphicraft.grenzzeichen.block.entity.OrbyEntity;
 import de.raphicraft.grenzzeichen.block.entity.hauptsignalbrueckeEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
+
+import javax.annotation.Nullable;
+import java.util.Objects;
 
 public class hauptsignalbruecke extends BlockWithEntity {
+    public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
+    public static final BooleanProperty POWERED = Properties.POWERED;
+
     public hauptsignalbruecke(Settings settings) {
         super(settings);
+        setDefaultState(this.stateManager.getDefaultState()
+                .with(FACING, Direction.NORTH)
+                .with(POWERED, false));
     }
-
 
     @Nullable
     @Override
@@ -32,16 +43,28 @@ public class hauptsignalbruecke extends BlockWithEntity {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(Properties.HORIZONTAL_FACING);
+        builder.add(FACING, POWERED);
     }
 
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
+    }
+    @SuppressWarnings("deprecation")
+    @Override
+    public void neighborUpdate(BlockState state, World world, BlockPos pos,
+                               Block block, BlockPos fromPos, boolean notify) {
+        if (!world.isClient()) {
+            boolean isPowered = world.isReceivingRedstonePower(pos);
+            if (!Objects.equals(state.get(POWERED), isPowered)) {
+                world.setBlockState(pos, state.with(POWERED, isPowered), Block.NOTIFY_ALL);
+            }
+        }
+        super.neighborUpdate(state, world, pos, block, fromPos, notify);
+    }
+    @SuppressWarnings("deprecation")
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext ctx) {
         return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
-
-    }
-    @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return super.getPlacementState(ctx).with(Properties.HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing());
     }
 }
