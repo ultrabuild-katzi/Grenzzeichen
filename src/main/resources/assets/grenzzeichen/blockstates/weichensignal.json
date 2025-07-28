@@ -1,9 +1,14 @@
 {
   "variants": {
-    "facing=north": { "model": "grenzzeichen:block/weichensignal", "uvlock": false },
-    "facing=east":  { "model": "grenzzeichen:block/weichensignal", "y":  90, "uvlock": false },
-    "facing=south": { "model": "grenzzeichen:block/weichensignal", "y": 180, "uvlock": false },
-    "facing=west":  { "model": "grenzzeichen:block/weichensignal", "y": 270, "uvlock": false }
+    "facing=north,powered=false": { "model": "grenzzeichen:block/weichensignal_white", "uvlock": false },
+    "facing=east,powered=false":  { "model": "grenzzeichen:block/weichensignal_white", "y":  90, "uvlock": false },
+    "facing=south,powered=false": { "model": "grenzzeichen:block/weichensignal_white", "y": 180, "uvlock": false },
+    "facing=west,powered=false":  { "model": "grenzzeichen:block/weichensignal_white", "y": 270, "uvlock": false },
+
+    "facing=north,powered=true": { "model": "grenzzeichen:block/weichensignal_red", "uvlock": false },
+    "facing=east,powered=true":  { "model": "grenzzeichen:block/weichensignal_red", "y":  90, "uvlock": false },
+    "facing=south,powered=true": { "model": "grenzzeichen:block/weichensignal_red", "y": 180, "uvlock": false },
+    "facing=west,powered=true":  { "model": "grenzzeichen:block/weichensignal_red", "y": 270, "uvlock": false }
 
   }
 }

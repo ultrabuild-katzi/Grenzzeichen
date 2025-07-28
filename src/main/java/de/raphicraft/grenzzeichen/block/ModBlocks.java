@@ -212,8 +212,8 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             AbstractBlock.Settings.copy(Blocks.CHEST).strength(4F, 6.0F)
                     .requiresTool()));
 
-    public static final Block BLACK_IRON_CRYSTAL_LAMP = registerBlock("black_iron_crystal_lamp",
-            new RedstoneLampBlock(FabricBlockSettings.copyOf(REDSTONE_LAMP).luminance(createLightLevelFromLitBlockState(15))));
+    public static final Block BLACK_IRON_CRYSTAL_LAMP = registerWithItem("black_iron_crystal_lamp", new RedstoneLampBlock
+            (AbstractBlock.Settings.copy(REDSTONE_LAMP).luminance(createLightLevelFromLitBlockState(15))));
 
     //ZS3
     public static final Block ZS3_10 = registerWithItem("zs3_10", new zs3_10(
