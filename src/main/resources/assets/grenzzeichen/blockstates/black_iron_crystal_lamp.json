@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "grenzzeichen:block/black_iron_crystal_lamp_on"
+    },
+    "lit=false": {
+      "model": "grenzzeichen:block/black_iron_crystal_lamp_off"
+    }
+  }
+}

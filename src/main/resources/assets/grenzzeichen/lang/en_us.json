@@ -15,6 +15,7 @@
   "item.grenzzeichen.ledlamperot": "Rote LED",
   "item.grenzzeichen.ledlampeweiss": "Weiße LED",
   "item.grenzzeichen.ledlampegruen": "Grüne LED",
+  "item.grenzzeichen.raw_black_iron": "Raw Black Iron",
   "item.grenzzeichen.grayiron": "Black Iron Ingot",
   "item.grenzzeichen.microcontroler": "Micro Controller",
   "item.grenzzeichen.ritzel": "Ritzel",
@@ -86,7 +87,10 @@
   "block.grenzzeichen.hazardblock": "Hazard Block",
   "block.grenzzeichen.track_plough": "Schienenräumer",
   "item.grenzzeichen.trackploughitem": "Schienenräumer",
+  "block.grenzzeichen.freezer": "Freezer",
+  "block.grenzzeichen.black_iron_crystal_lamp": "Black Iron Crystal Lamp",
 
+  "container.freezer": "Freezer",
 
   "block.grenzzeichen.whitestone": "White Stone",
   "block.grenzzeichen.blackstone": "Black Stone",

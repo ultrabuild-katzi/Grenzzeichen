@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"down": "grenzzeichen:block/freezer_bottom",
+		"up": "grenzzeichen:block/freezer_top",
+		"north": "grenzzeichen:block/freezer_side_1",
+		"south": "grenzzeichen:block/freezer_side_2",
+		"east": "grenzzeichen:block/freezer_side_1",
+		"west": "grenzzeichen:block/freezer_side_1",
+		"particle": "grenzzeichen:block/gray_iron_block"
+	}
+}

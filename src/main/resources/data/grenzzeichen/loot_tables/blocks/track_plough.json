@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "grenzzeichen:raw_black_iron"
+          "name": "grenzzeichen:track_plough"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "grenzzeichen:blocks/raw_black_iron"
+  "random_sequence": "grenzzeichen:blocks/track_plough"
 }

@@ -2,6 +2,7 @@ package de.raphicraft.grenzzeichen.item;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.ModBlocks;
+import de.raphicraft.grenzzeichen.block.settings.Freezer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -23,6 +24,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.REDSTONE);
                         entries.add(ModBlocks.BLACK_IRON_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLACK_IRON_ORE);
+                        entries.add(ModItems.RAW_BLACK_IRON);
+                        entries.add(ModItems.BLACK_IRON_CRYSTAL);
+                        entries.add(ModItems.GRAYIRON);
                         entries.add(ModBlocks.GRAY_IRON_BLOCK);
                         entries.add(ModBlocks.FAHRDIENSTLEITERKASTEN);
                         entries.add(ModBlocks.FUEHRERSTAND);
@@ -30,6 +34,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DVB);
                         entries.add(ModBlocks.HAZARDBLOCK);
                         entries.add(ModItems.TRACK_PLOUGHITEM);
+                        entries.add(ModBlocks.FREEZER);
                         //Items
                         entries.add(ModItems.LEDLAMPE);
                         entries.add(ModItems.LEDLAMPEROT);
@@ -82,7 +87,6 @@ public class ModItemGroups {
                         entries.add(ModItems.DMOTOR);
                         entries.add(ModItems.DREHGESTELL);
                         entries.add(ModItems.TRAINWHEEL);
-                        entries.add(ModItems.GRAYIRON);
                         entries.add(ModItems.MICROCONTROLER);
                         entries.add(ModItems.CPU);
                         entries.add(ModItems.CHIPPLATTE);

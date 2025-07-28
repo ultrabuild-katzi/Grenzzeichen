@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smelting",
     "ingredient": {
-        "item": "grenzzeichen:black_iron_ore"
+        "item": "grenzzeichen:raw_black_iron"
     },
     "result": "grenzzeichen:grayiron",
     "experience": 0.1,

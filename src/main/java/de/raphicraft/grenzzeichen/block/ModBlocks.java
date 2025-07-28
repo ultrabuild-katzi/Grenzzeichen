@@ -8,11 +8,16 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.RedstoneLampBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+
+import static net.minecraft.block.Blocks.REDSTONE_LAMP;
+import static net.minecraft.block.Blocks.createLightLevelFromLitBlockState;
+import static software.bernie.example.registry.BlockRegistry.registerBlock;
 
 public class ModBlocks {
     public static final Block GRENZZEICHEN = registerWithItem("grenzzeichen", new GrenzzeichenBlock(
@@ -202,6 +207,13 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
     public static final Block HAZARDBLOCK = registerWithItem("hazardblock", new Block(
             AbstractBlock.Settings.create().strength(4F, 6.0F)
                     .requiresTool()));
+
+    public static final Block FREEZER = registerWithItem("freezer", new Freezer(
+            AbstractBlock.Settings.copy(Blocks.CHEST).strength(4F, 6.0F)
+                    .requiresTool()));
+
+    public static final Block BLACK_IRON_CRYSTAL_LAMP = registerBlock("black_iron_crystal_lamp",
+            new RedstoneLampBlock(FabricBlockSettings.copyOf(REDSTONE_LAMP).luminance(createLightLevelFromLitBlockState(15))));
 
     //ZS3
     public static final Block ZS3_10 = registerWithItem("zs3_10", new zs3_10(

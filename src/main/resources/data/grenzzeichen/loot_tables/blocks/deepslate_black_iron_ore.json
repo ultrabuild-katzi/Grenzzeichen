@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "grenzzeichen:deepslate_black_iron_ore"
+          "name": "grenzzeichen:raw_black_iron"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "grenzzeichen:blocks/deepslate_black_iron_ore"
+  "random_sequence": "grenzzeichen:blocks/raw_black_iron"
 }

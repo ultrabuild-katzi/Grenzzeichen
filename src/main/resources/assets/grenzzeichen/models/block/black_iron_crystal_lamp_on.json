@@ -1,0 +1,7 @@
+
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "grenzzeichen:block/black_iron_crystal_lamp_on"
+	}
+}
