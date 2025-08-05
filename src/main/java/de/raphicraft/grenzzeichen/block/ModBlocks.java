@@ -2,6 +2,7 @@ package de.raphicraft.grenzzeichen.block;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.custom.Orby;
+import de.raphicraft.grenzzeichen.block.custom.hauptsignalblock;
 import de.raphicraft.grenzzeichen.block.custom.hauptsignalbruecke;
 import de.raphicraft.grenzzeichen.block.settings.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -25,10 +26,6 @@ public class ModBlocks {
                     .requiresTool()));
 
 public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new WeichensignalBlock(
-            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool().nonOpaque()));
-
-    public static final Block HAUPTSIGNAL = registerWithItem("hauptsignal", new HauptsignalBlock(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
                     .requiresTool().nonOpaque()));
 
@@ -291,6 +288,8 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             new Orby(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));
     public static final Block HAUPTSIGNALBRUECKE = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "hauptsignalbruecke"),
             new hauptsignalbruecke(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));
+    public static final Block HAUPTSIGNALBLOCK = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "hauptsignalblock"),
+            new hauptsignalblock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));
 
 
                                        // The end of Animated

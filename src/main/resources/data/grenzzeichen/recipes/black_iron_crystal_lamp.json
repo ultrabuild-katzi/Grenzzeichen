@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "GAG",
+        "#G#"
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:grayiron"
+        },
+        "G": {
+            "item": "minecraft:glowstone_dust"
+        },
+        "A": {
+            "item": "grenzzeichen:black_iron_crystal"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:black_iron_crystal_lamp",
+        "count": 1
+    }
+}

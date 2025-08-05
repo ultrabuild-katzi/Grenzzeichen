@@ -1,6 +1,7 @@
 package de.raphicraft.grenzzeichen.client;
 
 import de.raphicraft.grenzzeichen.block.entity.ModBlockEntities;
+import de.raphicraft.grenzzeichen.block.entity.client.HauptsignalblockRenderer;
 import de.raphicraft.grenzzeichen.block.entity.client.HauptsignalbrueckeRenderer;
 import de.raphicraft.grenzzeichen.block.entity.client.OrbyRenderer;
 import net.fabricmc.api.ClientModInitializer;
@@ -14,5 +15,6 @@ public class GrenzzeichenClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockEntityRendererFactories.register(ModBlockEntities.ORBY_ENTITY, OrbyRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.HAUPTSIGNALBRUECKEENTITY, HauptsignalbrueckeRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.HAUPTSIGNALBLOCKENTITY, HauptsignalblockRenderer::new);
     }
 }

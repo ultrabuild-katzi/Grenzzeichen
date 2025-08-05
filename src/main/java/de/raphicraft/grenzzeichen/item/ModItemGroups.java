@@ -112,6 +112,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModBlocks.WEICHENSIGNAL))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.HAUPTSIGNALBRUECKE);
+                        entries.add(ModBlocks.HAUPTSIGNALBLOCK);
                         entries.add(ModBlocks.APPROACHSIGNAL);
                         entries.add(ModBlocks.WEICHENSIGNAL);
                         entries.add(ModBlocks.ZS3FUSS);

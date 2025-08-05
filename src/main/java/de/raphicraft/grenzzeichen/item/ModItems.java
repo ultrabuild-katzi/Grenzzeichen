@@ -2,10 +2,7 @@ package de.raphicraft.grenzzeichen.item;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.ModBlocks;
-import de.raphicraft.grenzzeichen.item.custom.OrbyItem;
-import de.raphicraft.grenzzeichen.item.custom.TrackploughItem;
-import de.raphicraft.grenzzeichen.item.custom.TrainCapItem;
-import de.raphicraft.grenzzeichen.item.custom.hauptsignalbrueckeItem;
+import de.raphicraft.grenzzeichen.item.custom.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -65,6 +62,8 @@ public class ModItems {
 //            new OrbyItem(ModBlocks.ORBY, new Item.Settings()));
     public static final Item HAUPTSIGNALBRUECKE_ANIMATED_ITEM = registerItem("hauptsignalbruecke",
             new hauptsignalbrueckeItem(ModBlocks.HAUPTSIGNALBRUECKE, new Item.Settings()));
+    public static final Item HAUPTSIGNALBLOCK_ANIMATED_ITEM = registerItem("hauptsignalblock",
+            new HauptsignalblockItem(ModBlocks.HAUPTSIGNALBLOCK, new Item.Settings()));
 
                                                    // The end of Animated
 

@@ -2,7 +2,6 @@ package de.raphicraft.grenzzeichen.block.entity;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.ModBlocks;
-import de.raphicraft.grenzzeichen.block.settings.HauptsignalBlockEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
@@ -12,13 +11,11 @@ import net.minecraft.util.Identifier;
 public class ModBlockEntities {
 
     // Statische Felddeklarationen
-    public static final BlockEntityType<HauptsignalBlockEntity> HAUPTSIGNAL_BLOCK_ENTITY_TYPE = register(
-            "demo_block",
-            FabricBlockEntityTypeBuilder.create(HauptsignalBlockEntity::new, ModBlocks.HAUPTSIGNAL).build()
-    );
+
 
     public static BlockEntityType<OrbyEntity> ORBY_ENTITY;
     public static BlockEntityType<hauptsignalbrueckeEntity> HAUPTSIGNALBRUECKEENTITY;
+    public static BlockEntityType<HauptsignalblockEntity> HAUPTSIGNALBLOCKENTITY;
     public static BlockEntityType<hauptsignalbrueckeEntity> FREEZERENTITY;
 
     // Generische Methode zum Registrieren von Block-Entitäten
@@ -36,6 +33,10 @@ public class ModBlockEntities {
         HAUPTSIGNALBRUECKEENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(Grenzzeichen.MOD_ID, "hauptsignalbruecke_entity"),
                 FabricBlockEntityTypeBuilder.create(hauptsignalbrueckeEntity::new, ModBlocks.HAUPTSIGNALBRUECKE).build());
+
+        HAUPTSIGNALBLOCKENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                new Identifier(Grenzzeichen.MOD_ID, "hauptsignalblockentity"),
+                FabricBlockEntityTypeBuilder.create(HauptsignalblockEntity::new, ModBlocks.HAUPTSIGNALBLOCK).build());
 
         FREEZERENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(Grenzzeichen.MOD_ID, "freezerentity"),

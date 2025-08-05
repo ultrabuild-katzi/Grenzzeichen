@@ -78,6 +78,7 @@
   "block.grenzzeichen.zs3wandh": "Signal-Wandhalterung",
   "block.grenzzeichen.gleis5zoll": "Custom 5 Zoll Gleis",
   "block.grenzzeichen.hauptsignalbruecke": "Hauptsignal als halbes Brückensignal",
+  "block.grenzzeichen.hauptsignal": "Hauptsignal",
   "block.grenzzeichen.orby": "A little Orby :)",
   "block.grenzzeichen.fahrdienstleiterkasten": "Fahrdienstleiterkasten",
   "block.grenzzeichen.approachsignal": "Lichtvorsignal",
@@ -89,6 +90,7 @@
   "item.grenzzeichen.trackploughitem": "Schienenräumer",
   "block.grenzzeichen.freezer": "Freezer",
   "block.grenzzeichen.black_iron_crystal_lamp": "Black Iron Crystal Lamp",
+  "block.grenzzeichen.black_iron_crystal": "Black Iron Crystal",
 
   "container.freezer": "Freezer",
 
