@@ -1,0 +1,10 @@
+
+{
+  "variants": {
+
+    "facing=north": { "model": "grenzzeichen:block/vorsignal", "y": 180, "uvlock": false },
+    "facing=east":  { "model": "grenzzeichen:block/vorsignal", "y":  270, "uvlock": false },
+    "facing=south": { "model": "grenzzeichen:block/vorsignal", "y": 0, "uvlock": false },
+    "facing=west":  { "model": "grenzzeichen:block/vorsignal", "y": 90, "uvlock": false }
+  }
+}

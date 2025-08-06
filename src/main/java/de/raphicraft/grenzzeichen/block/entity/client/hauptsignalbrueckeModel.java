@@ -23,9 +23,9 @@ public class hauptsignalbrueckeModel<T extends GeoAnimatable> extends GeoModel<T
 
             return powered
                     ? new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_red.png")
-                    : new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_green.png");
+                    : new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_green.png");
         }
-        return new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_green.png");
+        return new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_green.png");
     }
 
     @Override

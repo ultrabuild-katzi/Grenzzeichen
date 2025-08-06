@@ -64,6 +64,8 @@ public class ModItems {
             new hauptsignalbrueckeItem(ModBlocks.HAUPTSIGNALBRUECKE, new Item.Settings()));
     public static final Item HAUPTSIGNALBLOCK_ANIMATED_ITEM = registerItem("hauptsignalblock",
             new HauptsignalblockItem(ModBlocks.HAUPTSIGNALBLOCK, new Item.Settings()));
+    public static final Item VORSIGNAL_ANIMATED_ITEM = registerItem("vorsignal",
+            new VorsignalItem(ModBlocks.VORSIGNAL, new Item.Settings()));
 
                                                    // The end of Animated
 

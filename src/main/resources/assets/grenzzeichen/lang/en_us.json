@@ -35,15 +35,16 @@
   "item.grenzzeichen.sbruecke_kopf": "Signalkopf für die Hauptsignalbrücke",
   "item.grenzzeichen.sbruecke_catwalk": "Catwalk für die Hauptsignalbrücke",
   "item.grenzzeichen.sbruecke_stand": "Ständer für die Hauptsignalbrücke",
+  "item.grenzzeichen.black_iron_crystal": "Black Iron Crystal",
+  "item.grenzzeichen.schiene": "Schiene für 5 Zoll-Gleis",
+  "item.grenzzeichen.schwelle": "Schwellen für 5 Zoll-Gleis",
+  "item.grenzzeichen.eisenstange": "Eisenstange",
 
   "item.grenzzeichen.black_iron_pickaxe": "Black Iron Pickaxe",
   "item.grenzzeichen.black_iron_axe": "Black Iron Axe",
   "item.grenzzeichen.black_iron_shovel": "Black Iron Shovel",
   "item.grenzzeichen.black_iron_hoe": "Black Iron Hoe",
   "item.grenzzeichen.black_iron_sword": "Black Iron Sword",
-  "item.grenzzeichen.schiene": "Schiene für 5 Zoll-Gleis",
-  "item.grenzzeichen.schwelle": "Schwellen für 5 Zoll-Gleis",
-  "item.grenzzeichen.eisenstange": "Eisenstange",
 
   "block.grenzzeichen.grenzzeichen": "Signal Ra 12 (DS 301) /Signal So 12 (DV 301) –Grenzzeichen",
   "block.grenzzeichen.weichensignal": "Sperrsignal",
@@ -81,7 +82,7 @@
   "block.grenzzeichen.hauptsignal": "Hauptsignal",
   "block.grenzzeichen.orby": "A little Orby :)",
   "block.grenzzeichen.fahrdienstleiterkasten": "Fahrdienstleiterkasten",
-  "block.grenzzeichen.approachsignal": "Lichtvorsignal",
+  "block.grenzzeichen.vorsignal": "Lichtvorsignal",
   "block.grenzzeichen.ra10": "Signal Ra 10 – Rangierhalttafel",
   "block.grenzzeichen.ra10leer": "Signal Ra 10 – Rangierhalttafel (ohne Schrift)",
   "block.grenzzeichen.dvb": "DVB Decal (Copycat-dicke)",
@@ -90,7 +91,7 @@
   "item.grenzzeichen.trackploughitem": "Schienenräumer",
   "block.grenzzeichen.freezer": "Freezer",
   "block.grenzzeichen.black_iron_crystal_lamp": "Black Iron Crystal Lamp",
-  "block.grenzzeichen.black_iron_crystal": "Black Iron Crystal",
+
 
   "container.freezer": "Freezer",
 

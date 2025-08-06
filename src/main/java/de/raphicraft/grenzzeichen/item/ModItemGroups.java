@@ -113,7 +113,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.HAUPTSIGNALBRUECKE);
                         entries.add(ModBlocks.HAUPTSIGNALBLOCK);
-                        entries.add(ModBlocks.APPROACHSIGNAL);
+                        entries.add(ModBlocks.VORSIGNAL);
                         entries.add(ModBlocks.WEICHENSIGNAL);
                         entries.add(ModBlocks.ZS3FUSS);
                         entries.add(ModBlocks.ZS3HALTER);

@@ -1,40 +1,38 @@
 package de.raphicraft.grenzzeichen.block.custom;
 
-import de.raphicraft.grenzzeichen.block.entity.hauptsignalbrueckeEntity;
+import de.raphicraft.grenzzeichen.block.entity.VorsignalEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.Properties;
-import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
-import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 
 import javax.annotation.Nullable;
 import java.util.Objects;
 
-public class hauptsignalbruecke extends BlockWithEntity {
+public class vorsignal extends BlockWithEntity {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static final BooleanProperty POWERED = Properties.POWERED;
 
-    public hauptsignalbruecke(Settings settings) {
+    public vorsignal(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState()
                 .with(FACING, Direction.NORTH)
                 .with(POWERED, false));
     }
 
-
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new hauptsignalbrueckeEntity(pos, state);
+        return new VorsignalEntity(pos, state);
     }
 
     @Override

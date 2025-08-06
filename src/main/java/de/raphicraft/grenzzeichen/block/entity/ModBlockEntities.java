@@ -16,6 +16,7 @@ public class ModBlockEntities {
     public static BlockEntityType<OrbyEntity> ORBY_ENTITY;
     public static BlockEntityType<hauptsignalbrueckeEntity> HAUPTSIGNALBRUECKEENTITY;
     public static BlockEntityType<HauptsignalblockEntity> HAUPTSIGNALBLOCKENTITY;
+    public static BlockEntityType<VorsignalEntity> VORSIGNALENTITY;
     public static BlockEntityType<hauptsignalbrueckeEntity> FREEZERENTITY;
 
     // Generische Methode zum Registrieren von Block-Entitäten
@@ -37,6 +38,10 @@ public class ModBlockEntities {
         HAUPTSIGNALBLOCKENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(Grenzzeichen.MOD_ID, "hauptsignalblockentity"),
                 FabricBlockEntityTypeBuilder.create(HauptsignalblockEntity::new, ModBlocks.HAUPTSIGNALBLOCK).build());
+
+        VORSIGNALENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                new Identifier(Grenzzeichen.MOD_ID, "vorsignalentity"),
+                FabricBlockEntityTypeBuilder.create(VorsignalEntity::new, ModBlocks.VORSIGNAL).build());
 
         FREEZERENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(Grenzzeichen.MOD_ID, "freezerentity"),
