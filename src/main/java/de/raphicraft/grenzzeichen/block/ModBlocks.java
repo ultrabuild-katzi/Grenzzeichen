@@ -289,7 +289,7 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             new Orby(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));
     public static final Block HAUPTSIGNALBRUECKE = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "hauptsignalbruecke"),
             new hauptsignalbruecke(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));
-    public static final Block HAUPTSIGNALBLOCK = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "hauptsignal"),
+    public static final Block HAUPTSIGNALBLOCK = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "hauptsignalblock"),
             new hauptsignalblock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));
     public static final Block VORSIGNAL = Registry.register(Registries.BLOCK, new Identifier(Grenzzeichen.MOD_ID, "vorsignal"),
             new vorsignal(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool().nonOpaque()));

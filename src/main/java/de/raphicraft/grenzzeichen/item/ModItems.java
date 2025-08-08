@@ -19,6 +19,7 @@ public class ModItems {
     public static final Item LEDLAMPEROT = registerItem("ledlamperot", new Item(new Item.Settings()));
     public static final Item LEDLAMPEWEISS = registerItem("ledlampeweiss", new Item(new Item.Settings()));
     public static final Item LEDLAMPEGRUEN = registerItem("ledlampegruen", new Item(new Item.Settings()));
+    public static final Item LEDLAMPEGELB = registerItem("ledlampegelb", new Item(new Item.Settings()));
     public static final Item TRAINWHEEL = registerItem("trainwheel", new Item(new Item.Settings()));
     public static final Item RAW_BLACK_IRON = registerItem("raw_black_iron", new Item(new Item.Settings()));
     public static final Item BLACK_IRON_CRYSTAL = registerItem("black_iron_crystal", new Item(new Item.Settings()));

@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#GD",
+        "ZZY",
+        " B "
+    ],
+    "key": {
+        "#": {
+            "item": "grenzzeichen:ledlamperot"
+        },
+        "G": {
+            "item": "grenzzeichen:ledlampeweiss"
+        },
+        "D": {
+            "item": "grenzzeichen:microcontroler"
+        },
+        "Z": {
+            "item": "grenzzeichen:ledlampegruen"
+        },
+        "Y": {
+            "item": "grenzzeichen:ledlampegelb"
+        },
+        "B": {
+            "item": "grenzzeichen:sbruecke_stand"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:hauptsignalblock",
+        "count": 1
+    }
+}

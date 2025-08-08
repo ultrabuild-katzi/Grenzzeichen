@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#G#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:yellow_dye"
+        },
+        "G": {
+            "item": "grenzzeichen:ledlampe"
+        }
+    },
+    "result": {
+        "item": "grenzzeichen:ledlampegelb",
+        "count": 1
+    }
+}

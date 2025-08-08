@@ -41,6 +41,7 @@ public class ModItemGroups {
                         entries.add(ModItems.LEDLAMPEROT);
                         entries.add(ModItems.LEDLAMPEWEISS);
                         entries.add(ModItems.LEDLAMPEGRUEN);
+                        entries.add(ModItems.LEDLAMPEGELB);
                         entries.add(ModItems.FUEHRERSTANDSKELETT);
                         entries.add(ModItems.DECALPLATE);
                         entries.add(ModItems.DECAL_P);
