@@ -6,7 +6,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import java.lang.reflect.Method;
-import java.util.Objects;
 
 public class CreateCompat {
 
@@ -14,7 +13,7 @@ public class CreateCompat {
         try {
             double nearestDistSq = Double.MAX_VALUE;
             Object foundSignal = null;
-            int radius = 2;
+            int radius = 3;
 
             BlockPos.Mutable searchPos = new BlockPos.Mutable();
 
@@ -40,7 +39,7 @@ public class CreateCompat {
                 Method getStateMethod = signalClass.getMethod("getState");
                 Object stateEnum = getStateMethod.invoke(foundSignal);
 
-                String stateName = stateEnum.toString(); // should return "RED", "YELLOW", "GREEN", "INVALID"
+                String stateName = stateEnum.toString();
 
                 return switch (stateName) {
                     case "RED" -> new Identifier("grenzzeichen", "textures/block/hauptsignal_red.png");
