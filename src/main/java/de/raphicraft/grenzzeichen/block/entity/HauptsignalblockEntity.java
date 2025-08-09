@@ -11,6 +11,8 @@ import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 
 public class HauptsignalblockEntity extends BlockEntity implements GeoBlockEntity {
+    public BlockPos lastSignalPosition = null;
+    public long nextSignalSearchTime = 0;
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
     public HauptsignalblockEntity(BlockPos pos, BlockState state) {
@@ -31,4 +33,6 @@ public class HauptsignalblockEntity extends BlockEntity implements GeoBlockEntit
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
     }
+
+
 }

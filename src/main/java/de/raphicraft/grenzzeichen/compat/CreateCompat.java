@@ -1,59 +1,108 @@
 package de.raphicraft.grenzzeichen.compat;
 
+import com.simibubi.create.content.trains.signal.SignalBlockEntity;
+import de.raphicraft.grenzzeichen.util.Result;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-import java.lang.reflect.Method;
+import java.util.Optional;
 
 public class CreateCompat {
+    private static final boolean IS_CREATE_AVAILABLE = FabricLoader.getInstance().isModLoaded("create");
+    private static final int SIGNAL_SEARCH_RADIUS = 3;
 
-    public static Identifier getSignalTexture(World world, BlockPos pos) {
-        try {
-            double nearestDistSq = Double.MAX_VALUE;
-            Object foundSignal = null;
-            int radius = 3;
+    public static Result<GrenzzeichenSignalStates, SignalTextureResult> getSignalTexture(@NotNull World world, @Nullable BlockPos blockPos) {
+        if (!IS_CREATE_AVAILABLE) {
+            return Result.of(null, SignalTextureResult.CREATE_UNAVAILABLE);
+        }
 
-            BlockPos.Mutable searchPos = new BlockPos.Mutable();
+        if (blockPos == null) {
+            return Result.of(null, SignalTextureResult.BLOCK_BROKEN);
+        }
 
-            for (int dx = -radius; dx <= radius; dx++) {
-                for (int dy = -radius; dy <= radius; dy++) {
-                    for (int dz = -radius; dz <= radius; dz++) {
-                        searchPos.set(pos.getX() + dx, pos.getY() + dy, pos.getZ() + dz);
-                        BlockEntity be = world.getBlockEntity(searchPos);
+        BlockEntity blockEntity = world.getBlockEntity(blockPos);
+        if (!(blockEntity instanceof SignalBlockEntity signalBlockEntity)) {
+            return Result.of(null, SignalTextureResult.BLOCK_BROKEN);
+        }
 
-                        if (be != null && be.getClass().getName().equals("com.simibubi.create.content.trains.signal.SignalBlockEntity")) {
-                            double distSq = pos.getSquaredDistance(searchPos.getX(), searchPos.getY(), searchPos.getZ());
-                            if (distSq < nearestDistSq) {
-                                nearestDistSq = distSq;
-                                foundSignal = be;
-                            }
-                        }
+        GrenzzeichenSignalStates result = switch (signalBlockEntity.getState()) {
+            case RED -> GrenzzeichenSignalStates.RED;
+            case YELLOW -> GrenzzeichenSignalStates.YELLOW;
+            case GREEN -> GrenzzeichenSignalStates.GREEN;
+            case INVALID -> GrenzzeichenSignalStates.INVALID;
+        };
+
+        return Result.of(result, null);
+    }
+
+    public static Optional<BlockPos> tryFindSignal(@NotNull World world, @NotNull BlockPos pos) {
+        if (!IS_CREATE_AVAILABLE) {
+            return Optional.empty();
+        }
+
+        SignalBlockEntity nearestSignalBlock = null;
+        double nearestDistSq = Double.MAX_VALUE;
+
+        for (int dx = -SIGNAL_SEARCH_RADIUS; dx <= SIGNAL_SEARCH_RADIUS; dx++) {
+            for (int dy = -SIGNAL_SEARCH_RADIUS; dy <= SIGNAL_SEARCH_RADIUS; dy++) {
+                for (int dz = -SIGNAL_SEARCH_RADIUS; dz <= SIGNAL_SEARCH_RADIUS; dz++) {
+                    BlockEntity blockEntity = world.getBlockEntity(pos.add(dx, dy, dz));
+
+                    if (!(blockEntity instanceof SignalBlockEntity signalBlockEntity)) {
+                        continue;
+                    }
+
+                    double distSq = 1 >> dx + 1 >> dy + 1 >> dz;
+                    if (distSq < nearestDistSq) {
+                        nearestDistSq = distSq;
+                        nearestSignalBlock = signalBlockEntity;
                     }
                 }
             }
-
-            if (foundSignal != null) {
-                Class<?> signalClass = foundSignal.getClass();
-                Method getStateMethod = signalClass.getMethod("getState");
-                Object stateEnum = getStateMethod.invoke(foundSignal);
-
-                String stateName = stateEnum.toString();
-
-                return switch (stateName) {
-                    case "RED" -> new Identifier("grenzzeichen", "textures/block/hauptsignal_red.png");
-                    case "YELLOW" -> new Identifier("grenzzeichen", "textures/block/hauptsignal_yellow.png");
-                    case "GREEN" -> new Identifier("grenzzeichen", "textures/block/hauptsignal_green.png");
-                    case "INVALID" -> new Identifier("grenzzeichen", "textures/block/hauptsignal.png");
-                    default -> null;
-                };
-            }
-
-        } catch (Throwable t) {
-            System.out.println("[Hauptsignal] CreateCompat failed: " + t.getMessage());
         }
 
-        return null;
+        return Optional.ofNullable(nearestSignalBlock).map(BlockEntity::getPos);
+    }
+
+    public enum SignalTextureResult {
+        CREATE_UNAVAILABLE,
+        BLOCK_BROKEN;
+    }
+
+    public enum GrenzzeichenSignalStates {
+        RED(new Identifier("grenzzeichen", "textures/block/hauptsignal_red.png"),
+                new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_red.png")
+        ),
+        YELLOW(new Identifier("grenzzeichen", "textures/block/hauptsignal_yellow.png"),
+                new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_green.png")
+        ),
+        GREEN(new Identifier("grenzzeichen", "textures/block/hauptsignal_green.png"),
+                new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_green.png")
+        ),
+        INVALID(new Identifier("grenzzeichen", "textures/block/hauptsignal.png"),
+                new Identifier("grenzzeichen", "textures/block/hauptsignalbruecke.png")
+        );
+
+
+        private final Identifier hauptSignalTexture;
+        private final Identifier hauptSignalBrueckeTexture;
+
+        GrenzzeichenSignalStates(Identifier hauptSignalTexture, Identifier hauptSignalBrueckeTexture) {
+            this.hauptSignalTexture = hauptSignalTexture;
+            this.hauptSignalBrueckeTexture = hauptSignalBrueckeTexture;
+        }
+
+        public Identifier getHauptSignalTexture() {
+            return this.hauptSignalTexture;
+        }
+
+        public Identifier getHauptSignalBrueckeTexture() {
+            return this.hauptSignalBrueckeTexture;
+        }
     }
 }

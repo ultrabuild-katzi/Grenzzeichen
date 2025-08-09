@@ -13,6 +13,9 @@ import software.bernie.geckolib.core.object.PlayState;
 public class hauptsignalbrueckeEntity extends BlockEntity implements GeoBlockEntity {
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
+    public BlockPos lastSignalPosition = null;
+    public long nextSignalSearchTime = 0;
+
     public hauptsignalbrueckeEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.HAUPTSIGNALBRUECKEENTITY, pos, state);
     }
