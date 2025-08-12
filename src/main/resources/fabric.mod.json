@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "grenzzeichen",
-  "version": "1.0",
+  "version": "1.0.1",
   "name": "Grenzzeichen",
   "description": "Adds all different types of Deco for Trains and a complete 5 inch train system (requires create) with locos and custom track",
   "authors": ["RaphiCraft20, Jannik_ca, NotStevy, Strassenbahn_12"],
