@@ -2,6 +2,7 @@ package de.raphicraft.grenzzeichen;
 
 import de.raphicraft.grenzzeichen.block.ModBlocks;
 import de.raphicraft.grenzzeichen.block.entity.ModBlockEntities;
+import de.raphicraft.grenzzeichen.commands.SpawnCommands;
 import de.raphicraft.grenzzeichen.item.ModItemGroups;
 import de.raphicraft.grenzzeichen.item.ModItems;
 import de.raphicraft.grenzzeichen.world.gen.ModWorldGeneration;
@@ -29,6 +30,7 @@ public class Grenzzeichen implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
         ModItemGroups.registerItemGroups();
+        SpawnCommands.register();
         ModBlockEntities.registerAllBlockEntities();
         
         /* World gen should be last */
