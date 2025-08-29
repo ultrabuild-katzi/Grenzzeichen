@@ -8,6 +8,7 @@ public class HauptsignalbrueckeRenderer extends GeoBlockRenderer<hauptsignalbrue
 
     public HauptsignalbrueckeRenderer(BlockEntityRendererFactory.Context context) {
         super(new hauptsignalbrueckeModel());
+        addRenderLayer(new SafeAutoGlowLayer<>(this));
     }
 
     @Override

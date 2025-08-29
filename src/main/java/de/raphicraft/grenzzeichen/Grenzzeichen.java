@@ -12,19 +12,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib.GeckoLib;
 
-/** Main mod class */
 public class Grenzzeichen implements ModInitializer {
-    /** Mod identifier */
+
     public static final String MOD_ID = "grenzzeichen";
-    /** Mod logger */
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    /** Creates mod identifier */
     public static Identifier MOD_ID(String name) {
         return Identifier.of(MOD_ID, name);
     }
 
-    /** Initializes mod components */
     @Override
     public void onInitialize() {
         ModBlocks.registerModBlocks();
@@ -32,8 +28,7 @@ public class Grenzzeichen implements ModInitializer {
         ModItemGroups.registerItemGroups();
         SpawnCommands.register();
         ModBlockEntities.registerAllBlockEntities();
-        
-        /* World gen should be last */
+
         ModWorldGeneration.generateModWorldGen();
 
         GeckoLib.initialize();

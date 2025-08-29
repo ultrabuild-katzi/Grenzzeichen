@@ -1,6 +1,5 @@
 package de.raphicraft.grenzzeichen.block.entity.client;
 
-import de.raphicraft.grenzzeichen.block.entity.HauptsignalblockEntity;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
@@ -10,19 +9,21 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.resource.Resource;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 
 import java.util.Optional;
 
-public class SafeAutoGlowLayer extends GeoRenderLayer<HauptsignalblockEntity> {
-    public SafeAutoGlowLayer(GeoRenderer<HauptsignalblockEntity> renderer) { super(renderer); }
+/** Renders <base>_glow.png as fullbright, but only if the file exists (prevents black silhouettes). */
+public class SafeAutoGlowLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> {
+    public SafeAutoGlowLayer(GeoRenderer<T> renderer) { super(renderer); }
 
     @Override
     public void render(MatrixStack matrices,
-                       HauptsignalblockEntity animatable,
+                       T animatable,
                        BakedGeoModel model,
-                       RenderLayer renderType,                    // <- order matters
+                       RenderLayer renderType,                // GeckoLib 4.4.9 signature
                        VertexConsumerProvider bufferSource,
                        VertexConsumer buffer,
                        float partialTick,
@@ -30,12 +31,13 @@ public class SafeAutoGlowLayer extends GeoRenderLayer<HauptsignalblockEntity> {
                        int packedOverlay) {
 
         Identifier base = getRenderer().getTextureLocation(animatable);
-        Identifier glow = appendGlowSuffix(base);
-        if (!resourceExists(glow)) return; // skip if missing
+        Identifier glow = withGlowSuffix(base);
+        if (!exists(glow)) return; // graceful no-op if missing
 
         RenderLayer eyes = RenderLayer.getEyes(glow);
         VertexConsumer glowBuf = bufferSource.getBuffer(eyes);
 
+        // reRender(..., partialTick, packedLight, packedOverlay, r,g,b,a)
         getRenderer().reRender(
                 model, matrices, bufferSource, animatable,
                 eyes, glowBuf,
@@ -46,13 +48,13 @@ public class SafeAutoGlowLayer extends GeoRenderLayer<HauptsignalblockEntity> {
         );
     }
 
-    private static Identifier appendGlowSuffix(Identifier base) {
+    private static Identifier withGlowSuffix(Identifier base) {
         String path = base.getPath();
         if (path.endsWith(".png")) path = path.substring(0, path.length() - 4);
         return new Identifier(base.getNamespace(), path + "_glow.png");
     }
 
-    private static boolean resourceExists(Identifier id) {
+    private static boolean exists(Identifier id) {
         try {
             Optional<Resource> res = MinecraftClient.getInstance()
                     .getResourceManager().getResource(id);

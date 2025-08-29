@@ -8,6 +8,7 @@ public class VorsignalRenderer extends GeoBlockRenderer<VorsignalEntity> {
 
     public VorsignalRenderer(BlockEntityRendererFactory.Context context) {
         super(new VorsignalModel<>());
+        addRenderLayer(new SafeAutoGlowLayer<>(this));
     }
 
     @Override
