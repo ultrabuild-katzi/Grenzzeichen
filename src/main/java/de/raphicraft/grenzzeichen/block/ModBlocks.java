@@ -210,6 +210,10 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             AbstractBlock.Settings.copy(Blocks.CHEST).strength(4F, 6.0F)
                     .requiresTool()));
 
+    public static final Block STW_SIGN = registerWithItem("stw_sign", new STW_SIGN(
+            AbstractBlock.Settings.copy(Blocks.CHEST).strength(4F, 6.0F)
+                    .requiresTool()));
+
     public static final Block BLACK_IRON_CRYSTAL_LAMP = registerWithItem("black_iron_crystal_lamp", new RedstoneLampBlock
             (AbstractBlock.Settings.copy(REDSTONE_LAMP).luminance(createLightLevelFromLitBlockState(15))));
 

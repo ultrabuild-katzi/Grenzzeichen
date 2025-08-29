@@ -1,8 +1,8 @@
-package de.raphicraft.grenzzeichen.block.custom;
+package de.raphicraft.grenzzeichen.block.settings;
 
-import de.raphicraft.grenzzeichen.block.entity.HauptsignalblockEntity;
-import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -14,40 +14,21 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
 
-public class hauptsignalblock extends BlockWithEntity {
+public class STW_SIGN extends Block{
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static final BooleanProperty POWERED = Properties.POWERED;
-
-    public hauptsignalblock(Settings settings) {
+    public STW_SIGN(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState()
                 .with(FACING, Direction.NORTH)
                 .with(POWERED, false));
     }
-
-    @Nullable
-    @Override
-    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new HauptsignalblockEntity(pos, state);
-    }
-
-    @Override
-    public BlockRenderType getRenderType(BlockState state) {
-        return BlockRenderType.ENTITYBLOCK_ANIMATED;
-    }
-
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING, POWERED);
-    }
-
-    @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
+        builder.add(Properties.HORIZONTAL_FACING, POWERED);
     }
     @SuppressWarnings("deprecation")
     @Override
@@ -61,10 +42,22 @@ public class hauptsignalblock extends BlockWithEntity {
         }
         super.neighborUpdate(state, world, pos, block, fromPos, notify);
     }
+
     @SuppressWarnings("deprecation")
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext ctx) {
-        return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 0.999f, 0.999f, 0.999f);
+        return VoxelShapes.cuboid(0.25f, 0.0f, 0.25f, 0.75f, 1.0f, 0.75f);
+
+
     }
 
+    @Override
+    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return VoxelShapes.empty(); // Keine Kollision
+    }
+
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return super.getPlacementState(ctx).with(Properties.HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing());
+    }
 }

@@ -36,6 +36,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TRACK_PLOUGHITEM);
                         entries.add(ModBlocks.FREEZER);
                         entries.add(ModBlocks.BLACK_IRON_CRYSTAL_LAMP);
+                        entries.add(ModBlocks.STW_SIGN);
                         //Items
                         entries.add(ModItems.LEDLAMPE);
                         entries.add(ModItems.LEDLAMPEROT);
