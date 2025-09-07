@@ -30,6 +30,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GRAY_IRON_BLOCK);
                         entries.add(ModBlocks.FAHRDIENSTLEITERKASTEN);
                         entries.add(ModBlocks.FUEHRERSTAND);
+                        entries.add(ModBlocks.DRUCKLUFTGERUEST);
+                        entries.add(ModBlocks.DRUCKLUFTGERUEST2);
+                        entries.add(ModBlocks.DRUCKLUFTGERUEST3);
+                        entries.add(ModBlocks.KOMPRESSOR);
                         entries.add(ModBlocks.DB_SIGN);
                         entries.add(ModBlocks.DVB);
                         entries.add(ModBlocks.HAZARDBLOCK);

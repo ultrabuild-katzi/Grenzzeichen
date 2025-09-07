@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "grenzzeichen:block/kompressor", "y": 0, "uvlock": false },
+    "facing=east":  { "model": "grenzzeichen:block/kompressor", "y":  90, "uvlock": false },
+    "facing=south": { "model": "grenzzeichen:block/kompressor", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "grenzzeichen:block/kompressor", "y": 270, "uvlock": false }
+
+  }
+}

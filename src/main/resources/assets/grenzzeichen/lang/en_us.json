@@ -93,6 +93,10 @@
   "block.grenzzeichen.freezer": "Freezer",
   "block.grenzzeichen.black_iron_crystal_lamp": "Black Iron Crystal Lamp",
   "block.grenzzeichen.stw_sign": "signal box sign",
+  "block.grenzzeichen.druckluftgeruest": "Compressed air scaffolding",
+  "block.grenzzeichen.druckluftgeruest2": "Compressed air scaffolding Panel",
+  "block.grenzzeichen.druckluftgeruest3": "Compressed air scaffolding without Valves",
+  "block.grenzzeichen.kompressor": "Kompressor",
 
 
   "container.freezer": "Freezer",

@@ -14,7 +14,7 @@ import java.util.Optional;
 
 public class CreateCompat {
     private static final boolean IS_CREATE_AVAILABLE = FabricLoader.getInstance().isModLoaded("create");
-    private static final int SIGNAL_SEARCH_RADIUS = 3;
+    private static final int SIGNAL_SEARCH_RADIUS = 2;
 
     public static Result<GrenzzeichenSignalStates, SignalTextureResult> getSignalTexture(@NotNull World world, @Nullable BlockPos blockPos) {
         if (!IS_CREATE_AVAILABLE) {

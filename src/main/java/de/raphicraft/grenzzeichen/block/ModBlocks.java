@@ -204,7 +204,23 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block HAZARDBLOCK = registerWithItem("hazardblock", new Block(
             AbstractBlock.Settings.create().strength(4F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool().nonOpaque()));
+
+    public static final Block DRUCKLUFTGERUEST = registerWithItem("druckluftgeruest", new druckluftgeruest(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool().nonOpaque()));
+
+    public static final Block DRUCKLUFTGERUEST2 = registerWithItem("druckluftgeruest2", new druckluftgeruest2(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool().nonOpaque()));
+
+    public static final Block DRUCKLUFTGERUEST3 = registerWithItem("druckluftgeruest3", new druckluftgeruest3(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool().nonOpaque()));
+
+    public static final Block KOMPRESSOR = registerWithItem("kompressor", new Kompressor(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool().nonOpaque()));
 
     public static final Block FREEZER = registerWithItem("freezer", new Freezer(
             AbstractBlock.Settings.copy(Blocks.CHEST).strength(4F, 6.0F)
