@@ -63,6 +63,8 @@
     "grenzzeichen:zs3_130",
     "grenzzeichen:zs3_140",
     "grenzzeichen:zs3_150",
-    "grenzzeichen:zs3_160"
+    "grenzzeichen:zs3_160",
+    "grenzzeichen:red_light_1",
+    "grenzzeichen:white_light_1"
   ]
 }

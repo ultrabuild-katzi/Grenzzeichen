@@ -1,10 +1,12 @@
 package de.raphicraft.grenzzeichen.client;
 
+import de.raphicraft.grenzzeichen.block.ModBlocks;
 import de.raphicraft.grenzzeichen.block.entity.ModBlockEntities;
 import de.raphicraft.grenzzeichen.block.entity.client.HauptsignalblockRenderer;
 import de.raphicraft.grenzzeichen.block.entity.client.HauptsignalbrueckeRenderer;
 import de.raphicraft.grenzzeichen.block.entity.client.OrbyRenderer;
 import de.raphicraft.grenzzeichen.block.entity.client.VorsignalRenderer;
+import de.raphicraft.grenzzeichen.client.render.RedGlowRenderer;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 

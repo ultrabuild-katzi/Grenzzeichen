@@ -41,6 +41,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FREEZER);
                         entries.add(ModBlocks.BLACK_IRON_CRYSTAL_LAMP);
                         entries.add(ModBlocks.STW_SIGN);
+                        entries.add(ModBlocks.RED_LIGHT_1);
+                        entries.add(ModBlocks.WHITE_LIGHT_1);
                         //Items
                         entries.add(ModItems.LEDLAMPE);
                         entries.add(ModItems.LEDLAMPEROT);

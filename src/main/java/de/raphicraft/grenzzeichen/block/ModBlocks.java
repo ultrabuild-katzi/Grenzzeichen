@@ -2,6 +2,7 @@ package de.raphicraft.grenzzeichen.block;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.custom.Orby;
+import de.raphicraft.grenzzeichen.block.custom.RedBlock;
 import de.raphicraft.grenzzeichen.block.custom.hauptsignalblock;
 import de.raphicraft.grenzzeichen.block.custom.hauptsignalbruecke;
 import de.raphicraft.grenzzeichen.block.custom.vorsignal;
@@ -9,6 +10,7 @@ import de.raphicraft.grenzzeichen.block.settings.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.RedstoneLampBlock;
 import net.minecraft.item.BlockItem;
@@ -16,6 +18,8 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 import static net.minecraft.block.Blocks.REDSTONE_LAMP;
 import static net.minecraft.block.Blocks.createLightLevelFromLitBlockState;
@@ -297,7 +301,19 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
     public static final Block ZS3_160 = registerWithItem("zs3_160", new zs3_160(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
                     .requiresTool()),new Item.Settings());
-    //ZS3 Vorsignal
+
+    public static final Block RED_LIGHT_1 = registerWithItem("red_light_1", new Block(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool().luminance(state -> 7)),new Item.Settings());
+
+    public static final Block WHITE_LIGHT_1 = registerWithItem("white_light_1", new Block(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool().luminance(state -> 15)),new Item.Settings());
+
+
+
+
+
 
     public static final Block ZS3V = registerWithItem("zs3v", new zs3v(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
