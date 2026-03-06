@@ -80,9 +80,9 @@
   "block.grenzzeichen.zs3wandh": "Signal-Wandhalterung",
   "block.grenzzeichen.gleis5zoll": "Custom 5 Zoll Gleis",
   "block.grenzzeichen.hauptsignalbruecke": "Hauptsignal als halbes Brückensignal",
-  "block.grenzzeichen.hauptsignalblock": "Hauptsignal",
+  "block.grenzzeichen.hauptsignalblock": "HV Hauptsignal",
   "block.grenzzeichen.orby": "A little Orby :)",
-  "block.grenzzeichen.fahrdienstleiterkasten": "Fahrdienstleiterkasten",
+  "block.grenzzeichen.fahrdienstleiterkasten": "Fernsprechkasten",
   "block.grenzzeichen.vorsignal": "Lichtvorsignal",
   "block.grenzzeichen.ra10": "Signal Ra 10 – Rangierhalttafel",
   "block.grenzzeichen.ra10leer": "Signal Ra 10 – Rangierhalttafel (ohne Schrift)",
@@ -97,6 +97,9 @@
   "block.grenzzeichen.druckluftgeruest2": "Druckluftgeruest Platte",
   "block.grenzzeichen.druckluftgeruest3": "Druckluftgeruest Ohne Ventile",
   "block.grenzzeichen.kompressor": "Kompressor",
+  "block.grenzzeichen.red_light_1": "Schlusslicht",
+  "block.grenzzeichen.white_light_1": "Spitzensignal (Fernlicht)",
+  "block.grenzzeichen.white_light_2": "Spitzensignal",
 
 
   "container.freezer": "Gefrierschrank",

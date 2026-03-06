@@ -80,7 +80,7 @@
   "block.grenzzeichen.zs3wandh": "Signal wall bracket",
   "block.grenzzeichen.gleis5zoll": "Custom 5 inch track",
   "block.grenzzeichen.hauptsignalbruecke": "Main signal as half bridge signal",
-  "block.grenzzeichen.hauptsignalblock": "Main signal",
+  "block.grenzzeichen.hauptsignalblock": "HV Main signal",
   "block.grenzzeichen.orby": "A little Orby :)",
   "block.grenzzeichen.fahrdienstleiterkasten": "Dispatcher box",
   "block.grenzzeichen.vorsignal": "Pre-light signal",
@@ -97,6 +97,9 @@
   "block.grenzzeichen.druckluftgeruest2": "Compressed air scaffolding Panel",
   "block.grenzzeichen.druckluftgeruest3": "Compressed air scaffolding without Valves",
   "block.grenzzeichen.kompressor": "Kompressor",
+  "block.grenzzeichen.red_light_1": "Rearlight",
+  "block.grenzzeichen.white_light_1": "Headlight (high beam)",
+  "block.grenzzeichen.white_light_2": "Headlight",
 
 
   "container.freezer": "Freezer",

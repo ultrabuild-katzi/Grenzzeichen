@@ -78,13 +78,13 @@ public class CreateCompat {
     }
 
     public enum GrenzzeichenSignalStates {
-        RED(new Identifier("grenzzeichen", "textures/block/hauptsignal_red.png"),
+        RED(new Identifier("grenzzeichen", "textures/block/hv_hauptsignal_red.png"),
                 new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_red.png")),
-        YELLOW(new Identifier("grenzzeichen", "textures/block/hauptsignal_yellow.png"),
+        YELLOW(new Identifier("grenzzeichen", "textures/block/hv_hauptsignal_yellow.png"),
                 new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_green.png")),
-        GREEN(new Identifier("grenzzeichen", "textures/block/hauptsignal_green.png"),
+        GREEN(new Identifier("grenzzeichen", "textures/block/hv_hauptsignal_green.png"),
                 new Identifier("grenzzeichen", "textures/block/hauptsignal_bruecke_halb_green.png")),
-        INVALID(new Identifier("grenzzeichen", "textures/block/hauptsignal.png"),
+        INVALID(new Identifier("grenzzeichen", "textures/block/hv_hauptsignal.png"),
                 new Identifier("grenzzeichen", "textures/block/hauptsignalbruecke.png"));
 
         private final Identifier hauptSignalTexture;

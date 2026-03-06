@@ -9,7 +9,7 @@ public class VorsignalModel<T extends GeoAnimatable> extends GeoModel<T> {
 
     @Override
     public Identifier getModelResource(GeoAnimatable animatable) {
-        return new Identifier("grenzzeichen", "geo/vorsignal.geo.json");
+        return new Identifier("grenzzeichen", "geo/hv_vorsignal.geo.json");
     }
 
     @Override
@@ -20,10 +20,10 @@ public class VorsignalModel<T extends GeoAnimatable> extends GeoModel<T> {
                     .orElse(false);
 
             return powered
-                    ? new Identifier("grenzzeichen", "textures/block/vorsignal_red.png")
-                    : new Identifier("grenzzeichen", "textures/block/vorsignal_green.png");
+                    ? new Identifier("grenzzeichen", "textures/block/hv_vorsignal_red.png")
+                    : new Identifier("grenzzeichen", "textures/block/hv_vorsignal_green.png");
         }
-        return new Identifier("grenzzeichen", "textures/block/vorsignal_green.png");
+        return new Identifier("grenzzeichen", "textures/block/hv_vorsignal_green.png");
     }
 
     @Override

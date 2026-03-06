@@ -236,6 +236,18 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
             AbstractBlock.Settings.copy(Blocks.CHEST).strength(4F, 6.0F)
                     .requiresTool()));
 
+    public static final Block RED_LIGHT_1 = registerWithItem("red_light_1", new Block(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool().luminance(state -> 7)),new Item.Settings());
+
+    public static final Block WHITE_LIGHT_1 = registerWithItem("white_light_1", new Block(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool().luminance(state -> 15)),new Item.Settings());
+
+    public static final Block WHITE_LIGHT_2 = registerWithItem("white_light_2", new Block(
+            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
+                    .requiresTool().luminance(state -> 10)),new Item.Settings());
+
     public static final Block BLACK_IRON_CRYSTAL_LAMP = registerWithItem("black_iron_crystal_lamp", new RedstoneLampBlock
             (AbstractBlock.Settings.copy(REDSTONE_LAMP).luminance(createLightLevelFromLitBlockState(15))));
 
@@ -303,14 +315,6 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
     public static final Block ZS3_160 = registerWithItem("zs3_160", new zs3_160(
             AbstractBlock.Settings.create().strength(1.5F, 6.0F)
                     .requiresTool()),new Item.Settings());
-
-    public static final Block RED_LIGHT_1 = registerWithItem("red_light_1", new Block(
-            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool().luminance(state -> 7)),new Item.Settings());
-
-    public static final Block WHITE_LIGHT_1 = registerWithItem("white_light_1", new Block(
-            AbstractBlock.Settings.create().strength(1.5F, 6.0F)
-                    .requiresTool().luminance(state -> 15)),new Item.Settings());
 
 
 

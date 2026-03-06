@@ -22,7 +22,7 @@ public class Ra10 extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext ctx) {
-        return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
+        return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 0.999f, 1.0f);
 
     }
     @Override

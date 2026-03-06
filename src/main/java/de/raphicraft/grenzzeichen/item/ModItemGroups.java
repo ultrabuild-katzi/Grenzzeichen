@@ -43,6 +43,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STW_SIGN);
                         entries.add(ModBlocks.RED_LIGHT_1);
                         entries.add(ModBlocks.WHITE_LIGHT_1);
+                        entries.add(ModBlocks.WHITE_LIGHT_2);
                         //Items
                         entries.add(ModItems.LEDLAMPE);
                         entries.add(ModItems.LEDLAMPEROT);

@@ -13,7 +13,7 @@ public class HauptsignalblockModel<T extends GeoAnimatable> extends GeoModel<T> 
 
     @Override
     public Identifier getModelResource(GeoAnimatable animatable) {
-        return new Identifier("grenzzeichen", "geo/hauptsignal.geo.json");
+        return new Identifier("grenzzeichen", "geo/hv_hauptsignal.geo.json");
     }
 
     @Override
@@ -22,7 +22,7 @@ public class HauptsignalblockModel<T extends GeoAnimatable> extends GeoModel<T> 
 
             var world = entity.getWorld();
             if (world == null)
-                return new Identifier("grenzzeichen", "textures/block/hauptsignal_invalid.png");
+                return new Identifier("grenzzeichen", "textures/block/hv_hauptsignal.png");
 
             BlockPos pos = entity.getPos();
             boolean powered = entity.getCachedState()
@@ -43,12 +43,12 @@ public class HauptsignalblockModel<T extends GeoAnimatable> extends GeoModel<T> 
 
             // Fallback redstone logic
             return powered
-                    ? new Identifier("grenzzeichen", "textures/block/hauptsignal_red.png")
-                    : new Identifier("grenzzeichen", "textures/block/hauptsignal_green.png");
+                    ? new Identifier("grenzzeichen", "textures/block/hv_hauptsignal_red.png")
+                    : new Identifier("grenzzeichen", "textures/block/hv_hauptsignal_green.png");
         }
 
         // Fallback for item in hand or invalid animatable
-        return new Identifier("grenzzeichen", "textures/block/hauptsignal_green.png");
+        return new Identifier("grenzzeichen", "textures/block/hv_hauptsignal_green.png");
     }
 
     @Override
