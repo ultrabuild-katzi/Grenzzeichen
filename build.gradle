@@ -28,7 +28,10 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
-    maven { name = "Curseforge Maven"; description = "Forge Config API Port"; url = "https://cursemaven.com/" }
+    maven {
+        name = "Fuzs Mod Resources"
+        url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
+    }
     maven { name = "Tterrag Maven"; description = "Create, Forge Registrate & Forge Flywheel"; url = "https://maven.tterrag.com/" }
     maven { name = "JamiesWhiteShirt Maven"; description = "Reach Entity Attributes"; url = "https://maven.jamieswhiteshirt.com/libs-release" }
     maven { name = "Jitpack maven"; description = "Mixin Extras & Fabric ASM"; url = "https://jitpack.io/" } //NOTE: LEAVE THIS AS LAST
