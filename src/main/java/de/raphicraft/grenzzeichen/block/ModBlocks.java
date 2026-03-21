@@ -7,6 +7,8 @@ import de.raphicraft.grenzzeichen.block.custom.hauptsignalblock;
 import de.raphicraft.grenzzeichen.block.custom.hauptsignalbruecke;
 import de.raphicraft.grenzzeichen.block.custom.vorsignal;
 import de.raphicraft.grenzzeichen.block.settings.*;
+import de.raphicraft.grenzzeichen.compat.CreateCompat;
+import de.raphicraft.grenzzeichen.compat.CreateContentCompat;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;

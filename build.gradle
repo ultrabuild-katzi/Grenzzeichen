@@ -12,6 +12,7 @@ base {
 
 
 repositories {
+    maven { url = "https://modmaven.dev/"} // flywheel fabric
     maven { url = "https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1" }
     maven { name = "Devos Maven"; description = "Create Fabric, Porting Lib, Forge Tags, Milk Lib & Fabric Registrate"; url = "https://mvn.devos.one/snapshots/" }
     maven {
@@ -122,6 +123,13 @@ loom {
             vmArg("-Dporting_lib.datagen.existing_resources=${project.file("src/main/resources")}")
 
             environmentVariable("DATAGEN", "TRUE")
+        }
+
+        server {
+            if(providers.gradleProperty("testWithCreate").isPresent())
+                runDir = "run-server-create"
+            else
+                runDir = "run-server"
         }
     }
 }

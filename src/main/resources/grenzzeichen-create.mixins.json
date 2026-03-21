@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.raphicraft.grenzzeichen.compat.create.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CarriageContraptionEntityMixin",
+    "CarriageContraptionMixin"
+  ],
+  "client": [
+  ],
+  "plugin": "de.raphicraft.grenzzeichen.compat.create.CreateMixinPlugin",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

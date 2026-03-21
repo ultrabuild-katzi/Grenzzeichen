@@ -21,7 +21,8 @@
     ]
   },
   "mixins": [
-    "grenzzeichen.mixins.json"
+    "grenzzeichen.mixins.json",
+    "grenzzeichen-create.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
