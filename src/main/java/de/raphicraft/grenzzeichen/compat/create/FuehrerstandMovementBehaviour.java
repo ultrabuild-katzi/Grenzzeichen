@@ -10,12 +10,10 @@ public class FuehrerstandMovementBehaviour extends ControlsMovementBehaviour {
 
     @Override
     public boolean renderAsNormalBlockEntity() {
-        // Let Create render the carried BlockEntity, so the Gecko model/texture/glow is used on trains.
         return true;
     }
 
     @Override
     public void renderInContraption(MovementContext context, VirtualRenderWorld renderWorld, ContraptionMatrices matrices, VertexConsumerProvider buffer) {
-        // Intentionally empty: ControlsMovementBehaviour would render Create's default lever model here.
     }
 }
