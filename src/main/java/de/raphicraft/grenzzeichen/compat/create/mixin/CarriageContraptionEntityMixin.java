@@ -12,7 +12,11 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(CarriageContraptionEntity.class)
 public class CarriageContraptionEntityMixin {
 
-    @Redirect(method = "control", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/math/Direction;rotateYCounterclockwise()Lnet/minecraft/util/math/Direction;"))
+    @Redirect(
+            method = "control",
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/util/math/Direction;rotateYCounterclockwise()Lnet/minecraft/util/math/Direction;"),
+            require = 0
+    )
     public Direction control(Direction instance, @Local(name = "info") StructureTemplate.StructureBlockInfo info) {
         return info.state().getBlock() == ModBlocks.FUEHRERSTAND ? instance.rotateYClockwise() : instance.rotateYCounterclockwise();
     }

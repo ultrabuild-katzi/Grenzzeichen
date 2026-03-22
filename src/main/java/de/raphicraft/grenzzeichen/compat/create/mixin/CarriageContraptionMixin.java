@@ -1,6 +1,5 @@
 package de.raphicraft.grenzzeichen.compat.create.mixin;
 
-import com.llamalad7.mixinextras.sugar.Local;
 import com.simibubi.create.content.trains.entity.CarriageContraption;
 import de.raphicraft.grenzzeichen.block.ModBlocks;
 import de.raphicraft.grenzzeichen.block.settings.FUEHRERSTAND;
@@ -34,13 +33,17 @@ public class CarriageContraptionMixin {
 
     @Inject(
             method = "capture",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lcom/simibubi/create/content/contraptions/Contraption;capture(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)Lorg/apache/commons/lang3/tuple/Pair;"
-            )
+            at = @At("HEAD"),
+            require = 0
     )
-    public void allowUsageOfFuehrerstand(World world, BlockPos pos, CallbackInfoReturnable<Pair<StructureTemplate.StructureBlockInfo, BlockEntity>> cir, @Local BlockState blockState) {
+    public void allowUsageOfFuehrerstand(World world, BlockPos pos, CallbackInfoReturnable<Pair<StructureTemplate.StructureBlockInfo, BlockEntity>> cir) {
+        BlockState blockState = world.getBlockState(pos);
+
         if (blockState.isOf(ModBlocks.FUEHRERSTAND)) {
+            if (!blockState.contains(FUEHRERSTAND.FACING)) {
+                return;
+            }
+
             Direction facing = blockState.get(FUEHRERSTAND.FACING);
             if (facing.getAxis() != this.assemblyDirection.getAxis()) {
 //                this.sidewaysControls = true;
