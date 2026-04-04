@@ -33,7 +33,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DRUCKLUFTGERUEST);
                         entries.add(ModBlocks.DRUCKLUFTGERUEST2);
                         entries.add(ModBlocks.DRUCKLUFTGERUEST3);
+                        entries.add(ModBlocks.SCHAFENBERGKUPPLUNG);
                         entries.add(ModBlocks.KOMPRESSOR);
+                        entries.add(ModBlocks.STROMKASTEN);
                         entries.add(ModBlocks.DB_SIGN);
                         entries.add(ModBlocks.DVB);
                         entries.add(ModBlocks.HAZARDBLOCK);
@@ -136,6 +138,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STROMWECHSELENDE);
                         entries.add(ModBlocks.PFEIFTAFEL);
                         entries.add(ModBlocks.DOPPELTEPFEIFTAFEL);
+                        entries.add(ModBlocks.NE5WEISS);
+                        entries.add(ModBlocks.NE5SCHWARZ);
 
 
                         //ZS3 Signale

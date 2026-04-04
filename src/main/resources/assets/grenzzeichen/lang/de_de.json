@@ -100,6 +100,10 @@
   "block.grenzzeichen.red_light_1": "Schlusslicht",
   "block.grenzzeichen.white_light_1": "Spitzensignal (Fernlicht)",
   "block.grenzzeichen.white_light_2": "Spitzensignal",
+  "block.grenzzeichen.schafenbergkupplung": "Schafenbergkupplung",
+  "block.grenzzeichen.stromkasten": "Schaltschrank/Stromkasten",
+  "block.grenzzeichen.ne5weiss": "NE 5",
+  "block.grenzzeichen.ne5schwarz": "NE 5",
 
 
   "container.freezer": "Gefrierschrank",

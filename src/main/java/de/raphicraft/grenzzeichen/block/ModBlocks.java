@@ -2,17 +2,13 @@ package de.raphicraft.grenzzeichen.block;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.custom.Orby;
-import de.raphicraft.grenzzeichen.block.custom.RedBlock;
 import de.raphicraft.grenzzeichen.block.custom.hauptsignalblock;
 import de.raphicraft.grenzzeichen.block.custom.hauptsignalbruecke;
 import de.raphicraft.grenzzeichen.block.custom.vorsignal;
 import de.raphicraft.grenzzeichen.block.settings.*;
-import de.raphicraft.grenzzeichen.compat.CreateCompat;
-import de.raphicraft.grenzzeichen.compat.CreateContentCompat;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.RedstoneLampBlock;
 import net.minecraft.item.BlockItem;
@@ -20,12 +16,9 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 
 import static net.minecraft.block.Blocks.REDSTONE_LAMP;
 import static net.minecraft.block.Blocks.createLightLevelFromLitBlockState;
-import static software.bernie.example.registry.BlockRegistry.registerBlock;
 
 public class ModBlocks {
     public static final Block GRENZZEICHEN = registerWithItem("grenzzeichen", new GrenzzeichenBlock(
@@ -250,6 +243,22 @@ public static final Block WEICHENSIGNAL = registerWithItem("weichensignal", new 
 
     public static final Block BLACK_IRON_CRYSTAL_LAMP = registerWithItem("black_iron_crystal_lamp", new RedstoneLampBlock
             (AbstractBlock.Settings.copy(REDSTONE_LAMP).luminance(createLightLevelFromLitBlockState(15))));
+
+    public static final Block SCHAFENBERGKUPPLUNG = registerWithItem("schafenbergkupplung", new schafenbergkupplung(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool().nonOpaque()));
+
+    public static final Block STROMKASTEN = registerWithItem("stromkasten", new stromkasten(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool().nonOpaque()));
+
+    public static final Block NE5WEISS = registerWithItem("ne5weiss", new ne5weiss(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool().nonOpaque()));
+
+    public static final Block NE5SCHWARZ = registerWithItem("ne5schwarz", new ne5schwarz(
+            AbstractBlock.Settings.create().strength(4F, 6.0F)
+                    .requiresTool().nonOpaque()));
 
     //ZS3
     public static final Block ZS3_10 = registerWithItem("zs3_10", new zs3_10(

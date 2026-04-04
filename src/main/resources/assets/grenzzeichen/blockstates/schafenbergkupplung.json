@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "grenzzeichen:block/schafenbergkupplung", "y":180, "uvlock": false },
+    "facing=east":  { "model": "grenzzeichen:block/schafenbergkupplung", "y":  270, "uvlock": false },
+    "facing=south": { "model": "grenzzeichen:block/schafenbergkupplung", "uvlock": false },
+    "facing=west":  { "model": "grenzzeichen:block/schafenbergkupplung", "y": 90, "uvlock": false }
+
+  }
+}
