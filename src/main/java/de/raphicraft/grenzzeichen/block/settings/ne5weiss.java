@@ -10,14 +10,14 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class ne5weiss extends Block {
+public class ne5weiss extends RotatableSignalBlock {
     public ne5weiss(Settings settings) {
         super(settings);
     }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(Properties.HORIZONTAL_FACING);
+        builder.add(Properties.HORIZONTAL_FACING, ROTATED);
     }
 
     @Override

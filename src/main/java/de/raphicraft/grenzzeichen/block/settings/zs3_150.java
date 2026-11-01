@@ -11,7 +11,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class zs3_150 extends Block {
+public class zs3_150 extends RotatableSignalBlock {
     public zs3_150(Settings settings) {
         super(settings);
     }
@@ -19,7 +19,7 @@ public class zs3_150 extends Block {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(Properties.HORIZONTAL_FACING);
+        builder.add(Properties.HORIZONTAL_FACING, ROTATED);
     }
 
     @Override

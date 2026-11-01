@@ -17,18 +17,19 @@ import net.minecraft.world.World;
 
 import java.util.Objects;
 
-public class WeichensignalBlock extends Block{
+public class WeichensignalBlock extends RotatableSignalBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static final BooleanProperty POWERED = Properties.POWERED;
     public WeichensignalBlock(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState()
                 .with(FACING, Direction.NORTH)
-                .with(POWERED, false));
+                .with(POWERED, false)
+                .with(ROTATED, false));
     }
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(Properties.HORIZONTAL_FACING, POWERED);
+        builder.add(Properties.HORIZONTAL_FACING, POWERED, ROTATED);
     }
     @SuppressWarnings("deprecation")
     @Override

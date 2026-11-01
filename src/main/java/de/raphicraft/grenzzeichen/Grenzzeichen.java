@@ -7,6 +7,7 @@ import de.raphicraft.grenzzeichen.compat.CreateCompat;
 import de.raphicraft.grenzzeichen.compat.CreateContentCompat;
 import de.raphicraft.grenzzeichen.item.ModItemGroups;
 import de.raphicraft.grenzzeichen.item.ModItems;
+import de.raphicraft.grenzzeichen.network.PrecisePlacementNetworking;
 import de.raphicraft.grenzzeichen.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
@@ -31,6 +32,7 @@ public class Grenzzeichen implements ModInitializer {
             CreateContentCompat.register();
         ModItemGroups.registerItemGroups();
         SpawnCommands.register();
+        PrecisePlacementNetworking.registerServer();
         ModBlockEntities.registerAllBlockEntities();
 
         ModWorldGeneration.generateModWorldGen();

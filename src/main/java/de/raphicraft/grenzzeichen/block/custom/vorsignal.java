@@ -3,6 +3,8 @@ package de.raphicraft.grenzzeichen.block.custom;
 import de.raphicraft.grenzzeichen.block.entity.VorsignalEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -26,6 +28,7 @@ public class vorsignal extends BlockWithEntity {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState()
                 .with(FACING, Direction.NORTH)
+                .with(SignalRotation.FINE_ROTATION, 0)
                 .with(POWERED, false));
     }
 
@@ -42,12 +45,18 @@ public class vorsignal extends BlockWithEntity {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING, POWERED);
+        builder.add(FACING, SignalRotation.FINE_ROTATION, POWERED);
     }
 
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
+        return SignalRotation.applyPlacement(this.getDefaultState(), FACING, ctx);
+    }
+
+    @Override
+    public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
+        super.onPlaced(world, pos, state, placer, itemStack);
+        SignalRotation.applyPrecisePlacement(world, pos, placer);
     }
     @SuppressWarnings("deprecation")
     @Override

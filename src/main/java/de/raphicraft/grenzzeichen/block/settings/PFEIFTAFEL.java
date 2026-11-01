@@ -10,14 +10,14 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class PFEIFTAFEL extends Block {
+public class PFEIFTAFEL extends RotatableSignalBlock {
     public PFEIFTAFEL(Settings settings) {
         super(settings);
     }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(Properties.HORIZONTAL_FACING);
+        builder.add(Properties.HORIZONTAL_FACING, ROTATED);
     }
 
     @Override

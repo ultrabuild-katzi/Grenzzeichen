@@ -1,7 +1,6 @@
 package de.raphicraft.grenzzeichen.block.entity;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.util.math.BlockPos;
 import software.bernie.geckolib.animatable.GeoBlockEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
@@ -10,7 +9,7 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 
-public class VorsignalEntity extends BlockEntity implements GeoBlockEntity {
+public class VorsignalEntity extends PreciseRotationBlockEntity implements GeoBlockEntity {
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
     public VorsignalEntity(BlockPos pos, BlockState state) {

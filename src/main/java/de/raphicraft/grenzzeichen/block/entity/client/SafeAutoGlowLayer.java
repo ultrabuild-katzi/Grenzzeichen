@@ -30,6 +30,8 @@ public class SafeAutoGlowLayer<T extends GeoAnimatable> extends GeoRenderLayer<T
                        int packedLight,
                        int packedOverlay) {
 
+        if (GhostRenderState.active) return;
+
         Identifier base = getRenderer().getTextureLocation(animatable);
         Identifier glow = withGlowSuffix(base);
         if (!exists(glow)) return; // graceful no-op if missing

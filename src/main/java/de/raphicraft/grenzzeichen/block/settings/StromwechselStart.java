@@ -10,7 +10,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class StromwechselStart extends Block {
+public class StromwechselStart extends RotatableSignalBlock {
     public StromwechselStart(Settings settings) {
         super(settings);
     }
@@ -18,7 +18,7 @@ public class StromwechselStart extends Block {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(Properties.HORIZONTAL_FACING);
+        builder.add(Properties.HORIZONTAL_FACING, ROTATED);
     }
 
     @Override

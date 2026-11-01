@@ -1,6 +1,9 @@
 {
   "variants": {
-    "": {
+    "rotated=false": {
+      "model": "grenzzeichen:block/grenzzeichen"
+    },
+    "rotated=true": {
       "model": "grenzzeichen:block/grenzzeichen"
     }
   }

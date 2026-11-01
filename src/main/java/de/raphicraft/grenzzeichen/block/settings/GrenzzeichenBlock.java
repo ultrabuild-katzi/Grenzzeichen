@@ -8,7 +8,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class GrenzzeichenBlock extends Block {
+public class GrenzzeichenBlock extends RotatableSignalBlock {
     public GrenzzeichenBlock(Settings settings) {
         super(settings);
     }

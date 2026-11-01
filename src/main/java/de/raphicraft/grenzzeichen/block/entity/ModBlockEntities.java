@@ -2,6 +2,8 @@ package de.raphicraft.grenzzeichen.block.entity;
 
 import de.raphicraft.grenzzeichen.Grenzzeichen;
 import de.raphicraft.grenzzeichen.block.ModBlocks;
+import de.raphicraft.grenzzeichen.block.settings.RotatableSignalBlock;
+import net.minecraft.block.Block;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
@@ -19,6 +21,7 @@ public class ModBlockEntities {
     public static BlockEntityType<VorsignalEntity> VORSIGNALENTITY;
     public static BlockEntityType<FuehrerstandEntity> FUEHRERSTAND_ENTITY;
     public static BlockEntityType<hauptsignalbrueckeEntity> FREEZERENTITY;
+    public static BlockEntityType<RotatedSignalBlockEntity> ROTATED_SIGNAL;
 
     // Generische Methode zum Registrieren von Block-Entitäten
     public static <T extends BlockEntityType<?>> T register(String path, T blockEntityType) {
@@ -51,5 +54,12 @@ public class ModBlockEntities {
         FREEZERENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(Grenzzeichen.MOD_ID, "freezerentity"),
                 FabricBlockEntityTypeBuilder.create(hauptsignalbrueckeEntity::new, ModBlocks.HAUPTSIGNALBRUECKE).build());
+
+        Block[] rotatable = Registries.BLOCK.stream()
+                .filter(b -> b instanceof RotatableSignalBlock)
+                .toArray(Block[]::new);
+        ROTATED_SIGNAL = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                new Identifier(Grenzzeichen.MOD_ID, "rotated_signal"),
+                FabricBlockEntityTypeBuilder.create(RotatedSignalBlockEntity::new, rotatable).build());
     }
 }
